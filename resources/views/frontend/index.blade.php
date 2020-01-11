@@ -41,7 +41,7 @@
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="frontend/assets/index.html">
+						<a href="home">
 							<img src="frontend/assets/images/icons/logo.png" alt="IMG-LOGO" data-logofixed="frontend/assets/images/icons/logo2.png">
 						</a>
 					</div>
@@ -51,31 +51,23 @@
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="frontend/assets/index.html">Home</a>
+									<a href="">Home</a>
 								</li>
 
 								<li>
-									<a href="frontend/assets/menu.html">Menu</a>
+									<a href="frontend/menu">Menu</a>
 								</li>
 
 								<li>
-									<a href="frontend/assets/reservation.html">Reservation</a>
+									<a href="frontend/gallery">Gallery</a>
 								</li>
 
 								<li>
-									<a href="frontend/assets/gallery.html">Gallery</a>
+									<a href="about">About</a>
 								</li>
 
 								<li>
-									<a href="frontend/assets/about.html">About</a>
-								</li>
-
-								<li>
-									<a href="frontend/assets/blog.html">Blog</a>
-								</li>
-
-								<li>
-									<a href="frontend/assets/contact.html">Contact</a>
+									<a href="frontend/contact">Contact</a>
 								</li>
 							</ul>
 						</nav>
@@ -83,9 +75,9 @@
 
 					<!-- Social -->
 					<div class="social flex-w flex-l-m p-r-20">
-						<a href="frontend/assets/#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-						<a href="frontend/assets/#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
-						<a href="frontend/assets/#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>
 
 						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
 					</div>
@@ -102,32 +94,28 @@
 		<!-- - -->
 		<ul class="menu-sidebar p-t-95 p-b-70">
 			<li class="t-center m-b-13">
-				<a href="frontend/assets/index" class="txt19">Home</a>
+				<a href="frontend/index" class="txt19">Home</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="frontend/assets/menu.html" class="txt19">Menu</a>
+				<a href="frontend/menu" class="txt19">Menu</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="frontend/assets/gallery.html" class="txt19">Gallery</a>
+				<a href="frontend/gallery" class="txt19">Gallery</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="frontend/assets/about.html" class="txt19">About</a>
-			</li>
-
-			<li class="t-center m-b-13">
-				<a href="frontend/assets/blog.html" class="txt19">Blog</a>
+				<a href="frontend/about" class="txt19">About</a>
 			</li>
 
 			<li class="t-center m-b-33">
-				<a href="frontend/assets/contact.html" class="txt19">Contact</a>
+				<a href="frontend/contact" class="txt19">Contact</a>
 			</li>
 
 			<li class="t-center">
 				<!-- Button3 -->
-				<a href="frontend/assets/reservation.html" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
+				<a href="frontend/reservation" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
 					Reservation
 				</a>
 			</li>
@@ -230,7 +218,7 @@
 						</span>
 
 						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="rotateInUpRight">
-							Pato Place
+							SeaFood Dish
 						</h2>
 
 						<div class="wrap-btn-slide1 animated visible-false" data-appear="rotateIn">
@@ -266,7 +254,7 @@
 							Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
 						</p>
 
-						<a href="frontend/assets/about.html" class="txt4">
+						<a href="about" class="txt4">
 							Our Story
 							<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
 						</a>
@@ -275,7 +263,7 @@
 
 				<div class="col-md-6 p-b-30">
 					<div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-						<img src="frontend/assets/images/our-story-01.jpg" alt="IMG-OUR">
+						<img src="frontend/assets/images/testbg1.jpg" alt="IMG-OUR">
 					</div>
 				</div>
 			</div>
@@ -284,7 +272,7 @@
 
 	<!-- Intro -->
 	<section class="section-intro">
-		<div class="header-intro parallax100 t-center p-t-135 p-b-158" style="background-image: url(frontend/assets/images/testbg1.jpg);">
+		<div class="header-intro parallax100 t-center p-t-135 p-b-158" style="background-image: url(frontend/assets/images/bg1.jpg);">
 			<span class="tit2 p-l-15 p-r-15">
 				Discover
 			</span>
@@ -301,11 +289,11 @@
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="frontend/assets/#"><img src="frontend/assets/images/intro-01.jpg" alt="IMG-INTRO"></a>
+								<a href="#"><img src="frontend/assets/images/testbg2.jpg" alt="IMG-INTRO"></a>
 							</div>
 
-							<div class="wrap-text-blo1 p-t-35">
-								<a href="frontend/assets/#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+							{{-- <div class="wrap-text-blo1 p-t-35">
+								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
 									Romantic Restaurant
 								</h4></a>
 
@@ -313,11 +301,11 @@
 									Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
 								</p>
 
-								<a href="frontend/assets/#" class="txt4">
+								<a href="#" class="txt4">
 									Learn More
 									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
 								</a>
-							</div>
+							</div> --}}
 						</div>
 					</div>
 
@@ -325,11 +313,11 @@
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="frontend/assets/#"><img src="frontend/assets/images/intro-02.jpg" alt="IMG-INTRO"></a>
+								<a href="#"><img src="frontend/assets/images/testbg1.jpg" alt="IMG-INTRO"></a>
 							</div>
 
-							<div class="wrap-text-blo1 p-t-35">
-								<a href="frontend/assets/#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+							{{-- <div class="wrap-text-blo1 p-t-35">
+								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
 									Delicious Food
 								</h4></a>
 
@@ -337,11 +325,11 @@
 									Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh urna
 								</p>
 
-								<a href="frontend/assets/#" class="txt4">
+								<a href="#" class="txt4">
 									Learn More
 									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
 								</a>
-							</div>
+							</div> --}}
 						</div>
 					</div>
 
@@ -349,11 +337,11 @@
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="frontend/assets/#"><img src="frontend/assets/images/intro-04.jpg" alt="IMG-INTRO"></a>
+								<a href="#"><img src="frontend/assets/images/testbg3.jpg" alt="IMG-INTRO"></a>
 							</div>
 
-							<div class="wrap-text-blo1 p-t-35">
-								<a href="frontend/assets/#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+							{{-- <div class="wrap-text-blo1 p-t-35">
+								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
 									Red Wines You Love
 								</h4></a>
 
@@ -361,11 +349,11 @@
 									Sed ornare ligula eget tortor tempor, quis porta tellus dictum.
 								</p>
 
-								<a href="frontend/assets/#" class="txt4">
+								<a href="#" class="txt4">
 									Learn More
 									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
 								</a>
-							</div>
+							</div> --}}
 						</div>
 					</div>
 
@@ -1312,7 +1300,7 @@
 			<div class="wrap-video-mo-01">
 				<div class="w-full wrap-pic-w op-0-0"><img src="frontend/assets/images/icons/video-16-9.jpg" alt="IMG"></div>
 				<div class="video-mo-01">
-					<iframe src="frontend/assets/https://www.youtube.com/embed/5k1hSu2gdKE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/5k1hSu2gdKE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
@@ -1346,6 +1334,5 @@
 	<script type="text/javascript" src="frontend/assets/vendor/lightbox2/js/lightbox.min.js"></script>
 <!--===============================================================================================-->
 	<script src="frontend/assets/js/main.js"></script>
-
 </body>
 </html>

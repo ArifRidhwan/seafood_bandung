@@ -14,11 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/about', function () {
+    return view('frontend.about');
+});
+Route::get('/menu', function () {
+    return view('frontend.menu');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
