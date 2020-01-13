@@ -7,7 +7,7 @@
 <!--===============================================================================================-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="frontend/assets/images/icons/favicon.png"/>
+	<link rel="icon" type="image/png" href="frontend/assets/frontend/assets/images/icons/favicon.png"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="frontend/assets/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -43,8 +43,8 @@
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html">
-							<img src="frontend/assets/images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
+						<a href="home">
+							<img src="frontend/assets/images/icons/logo.png" alt="IMG-LOGO" data-logofixed="frontend/assets/images/icons/logo2.png">
 						</a>
 					</div>
 
@@ -53,31 +53,23 @@
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="index.html">Home</a>
+									<a href="home">Home</a>
 								</li>
 
 								<li>
-									<a href="menu.html">Menu</a>
+									<a href="menu">Menu</a>
 								</li>
 
 								<li>
-									<a href="reservation.html">Reservation</a>
+									<a href="gallery">Gallery</a>
 								</li>
 
 								<li>
-									<a href="gallery.html">Gallery</a>
+									<a href="about">About</a>
 								</li>
 
 								<li>
-									<a href="about.html">About</a>
-								</li>
-
-								<li>
-									<a href="blog.html">Blog</a>
-								</li>
-
-								<li>
-									<a href="contact.html">Contact</a>
+									<a href="contact">Contact</a>
 								</li>
 							</ul>
 						</nav>
@@ -104,34 +96,23 @@
 		<!-- - -->
 		<ul class="menu-sidebar p-t-95 p-b-70">
 			<li class="t-center m-b-13">
-				<a href="index.html" class="txt19">Home</a>
+				<a href="home" class="txt19">Home</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="menu.html" class="txt19">Menu</a>
+				<a href="menu" class="txt19">Menu</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="gallery.html" class="txt19">Gallery</a>
+				<a href="gallery" class="txt19">Gallery</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="about.html" class="txt19">About</a>
-			</li>
-
-			<li class="t-center m-b-13">
-				<a href="blog.html" class="txt19">Blog</a>
+				<a href="about" class="txt19">About</a>
 			</li>
 
 			<li class="t-center m-b-33">
-				<a href="contact.html" class="txt19">Contact</a>
-			</li>
-
-			<li class="t-center">
-				<!-- Button3 -->
-				<a href="reservation.html" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
-					Reservation
-				</a>
+				<a href="contact" class="txt19">Contact</a>
 			</li>
 		</ul>
 
@@ -143,51 +124,63 @@
 			</h4>
 
 			<!-- Gallery -->
-			<div class="wrap-gallery-sidebar flex-w">
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-01.jpg" alt="GALLERY">
-				</a>
+			<div class="wrap-gallery-footer flex-w">
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
+						</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-02.jpg" alt="GALLERY">
-				</a>
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
+						</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-03.jpg" alt="GALLERY">
-				</a>
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
+						</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-05.jpg" alt="GALLERY">
-				</a>
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
+						</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-06.jpg" alt="GALLERY">
-				</a>
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
+						</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-07.jpg" alt="GALLERY">
-				</a>
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
+						</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-09.jpg" alt="GALLERY">
-				</a>
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
+						</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-10.jpg" alt="GALLERY">
-				</a>
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
+						</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-11.jpg" alt="GALLERY">
-				</a>
-			</div>
-		</div>
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
+						</a>
+                    </div>
+                </div>
 	</aside>
 
 
 	<!-- Title Page -->
-	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(images/bg-title-page-01.jpg);">
+	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(frontend/assets/images/bg1.jpg);">
 		<h2 class="tit6 t-center">
-			Pato Menu
+			Menu
 		</h2>
 	</section>
 
@@ -570,9 +563,9 @@
 	</section>
 
 
-	<!-- Lunch -->
+	{{-- <!-- Lunch -->
 	<section class="section-lunch bgwhite">
-		<div class="header-lunch parallax0 parallax100" style="background-image: url(images/header-menu-01.jpg);">
+		<div class="header-lunch parallax0 parallax100" style="background-image: url(frontend/assets/images/header-menu-01.jpg);">
 			<div class="bg1-overlay t-center p-t-170 p-b-165">
 				<h2 class="tit4 t-center">
 					Lunch
@@ -586,7 +579,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/lunch-01.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="frontend/assets/images/lunch-01.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -607,7 +600,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/lunch-03.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="frontend/assets/images/lunch-03.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -628,7 +621,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/lunch-05.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="frontend/assets/images/lunch-05.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -651,7 +644,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/lunch-02.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="frontend/assets/images/lunch-02.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -672,7 +665,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/lunch-04.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="frontend/assets/images/lunch-04.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -693,7 +686,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/lunch-06.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="frontend/assets/images/lunch-06.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -718,7 +711,7 @@
 
 	<!-- Dinner -->
 	<section class="section-dinner bgwhite">
-		<div class="header-dinner parallax0 parallax100" style="background-image: url(images/header-menu-02.jpg);">
+		<div class="header-dinner parallax0 parallax100" style="background-image: url(frontend/assets/images/header-menu-02.jpg);">
 			<div class="bg1-overlay t-center p-t-170 p-b-165">
 				<h2 class="tit4 t-center">
 					Dinner
@@ -732,7 +725,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/dinner-01.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="frontend/assets/images/dinner-01.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -753,7 +746,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/dinner-03.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="frontend/assets/images/dinner-03.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -774,7 +767,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/dinner-05.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="frontend/assets/images/dinner-05.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -797,7 +790,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/dinner-02.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="frontend/assets/images/dinner-02.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -818,7 +811,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/dinner-04.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="frontend/assets/images/dinner-04.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -839,7 +832,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/dinner-06.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="frontend/assets/images/dinner-06.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -859,10 +852,10 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> --}}
 
 
-	<!-- Sign up -->
+	{{-- <!-- Sign up -->
 	<div class="section-signup bg1-pattern p-t-85 p-b-85">
 		<form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">
 			<span class="txt5 m-10">
@@ -879,7 +872,7 @@
 				Sign-up
 			</button>
 		</form>
-	</div>
+	</div> --}}
 
 
 	<!-- Footer -->
@@ -980,52 +973,52 @@
 
 					<!-- Gallery footer -->
 					<div class="wrap-gallery-footer flex-w">
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-01.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-02.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-03.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-04.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-04.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-05.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-06.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-07.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-08.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-08.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-09.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-10.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-11.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-12.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-12.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
+							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
 						</a>
 					</div>
 
@@ -1073,7 +1066,7 @@
 	<script type="text/javascript" src="frontend/assets/vendor/daterangepicker/daterangepicker.js"></script>
 <!--===============================================================================================-->
 	<script type="text/javascript" src="frontend/assets/vendor/slick/slick.min.js"></script>
-	<script type="text/javascript" src="js/slick-custom.js"></script>
+	<script type="text/javascript" src="frontend/assets/js/slick-custom.js"></script>
 <!--===============================================================================================-->
 	<script type="text/javascript" src="frontend/assets/vendor/parallax100/parallax100.js"></script>
 	<script type="text/javascript">
@@ -1084,7 +1077,7 @@
 <!--===============================================================================================-->
 	<script type="text/javascript" src="frontend/assets/vendor/lightbox2/js/lightbox.min.js"></script>
 <!--===============================================================================================-->
-	<script src="js/main.js"></script>
+	<script src="frontend/assets/js/main.js"></script>
 
 </body>
 </html>

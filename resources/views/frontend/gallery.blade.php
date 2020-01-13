@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>About Us</title>
+	<title>Gallery</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -33,7 +33,7 @@
 	<link rel="stylesheet" type="text/css" href="frontend/assets/css/main.css">
 <!--===============================================================================================-->
 </head>
-<body>
+<body class="animsition">
 
 	<!-- Header -->
 	<header>
@@ -53,23 +53,23 @@
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="home">Home</a>
+									<a href="index">Home</a>
 								</li>
 
 								<li>
-									<a href="frontend/assets/menu.html">Menu</a>
+									<a href="menu">Menu</a>
 								</li>
 
 								<li>
-									<a href="frontend/assets/gallery.html">Gallery</a>
+									<a href="gallery">Gallery</a>
 								</li>
 
 								<li>
-									<a href="frontend/assets/about.html">About</a>
-                                </li>
+									<a href="about">About</a>
+								</li>
 
 								<li>
-									<a href="frontend/assets/contact.html">Contact</a>
+									<a href="contact">Contact</a>
 								</li>
 							</ul>
 						</nav>
@@ -77,9 +77,9 @@
 
 					<!-- Social -->
 					<div class="social flex-w flex-l-m p-r-20">
-						<a href="frontend/assets/#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-						<a href="frontend/assets/#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
-						<a href="frontend/assets/#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>
 
 						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
 					</div>
@@ -96,7 +96,7 @@
 		<!-- - -->
 		<ul class="menu-sidebar p-t-95 p-b-70">
 			<li class="t-center m-b-13">
-				<a href="home" class="txt19">Home</a>
+				<a href="index" class="txt19">Home</a>
 			</li>
 
 			<li class="t-center m-b-13">
@@ -111,13 +111,10 @@
 				<a href="about" class="txt19">About</a>
 			</li>
 
-			<li class="t-center m-b-13">
-				<a href="blog" class="txt19">Blog</a>
-			</li>
-
 			<li class="t-center m-b-33">
 				<a href="contact" class="txt19">Contact</a>
 			</li>
+
 		</ul>
 
 		<!-- - -->
@@ -130,39 +127,39 @@
 			<!-- Gallery -->
 			<div class="wrap-gallery-sidebar flex-w">
 				<a class="item-gallery-sidebar wrap-pic-w" href="frontend/assets/images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-01.jpg" alt="GALLERY">
+					<img src="frontend/assets/images/photo-gallery-thumb-01.jpg" alt="GALLERY">
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="frontend/assets/images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-02.jpg" alt="GALLERY">
+					<img src="frontend/assets/images/photo-gallery-thumb-02.jpg" alt="GALLERY">
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="frontend/assets/images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-03.jpg" alt="GALLERY">
+					<img src="frontend/assets/images/photo-gallery-thumb-03.jpg" alt="GALLERY">
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="frontend/assets/images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-05.jpg" alt="GALLERY">
+					<img src="frontend/assets/images/photo-gallery-thumb-05.jpg" alt="GALLERY">
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="frontend/assets/images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-06.jpg" alt="GALLERY">
+					<img src="frontend/assets/images/photo-gallery-thumb-06.jpg" alt="GALLERY">
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="frontend/assets/images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-07.jpg" alt="GALLERY">
+					<img src="frontend/assets/images/photo-gallery-thumb-07.jpg" alt="GALLERY">
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="frontend/assets/images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-09.jpg" alt="GALLERY">
+					<img src="frontend/assets/images/photo-gallery-thumb-09.jpg" alt="GALLERY">
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="frontend/assets/images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-10.jpg" alt="GALLERY">
+					<img src="frontend/assets/images/photo-gallery-thumb-10.jpg" alt="GALLERY">
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="frontend/assets/images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-11.jpg" alt="GALLERY">
+					<img src="frontend/assets/images/photo-gallery-thumb-11.jpg" alt="GALLERY">
 				</a>
 			</div>
 		</div>
@@ -170,195 +167,127 @@
 
 
 	<!-- Title Page -->
-	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(frontend/assets/images/bg1.jpg);">
+	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(frontend/assets/images/bg-title-page-02.jpg);">
 		<h2 class="tit6 t-center">
-			About Us
+			Gallery
 		</h2>
 	</section>
 
 
-	<!-- Our Story -->
-	<section class="bg2-pattern p-t-116 p-b-110 t-center p-l-15 p-r-15">
-		<span class="tit2 t-center">
-			SeaFood Dish
-		</span>
 
-		<h3 class="tit3 t-center m-b-35 m-t-5">
-			Our Story
-		</h3>
+	{{-- <!-- Gallery -->
+	<div class="section-gallery p-t-118 p-b-100">
+		<div class="wrap-label-gallery filter-tope-group size27 flex-w flex-sb-m m-l-r-auto flex-col-c-sm p-l-15 p-r-15 m-b-60">
+			<button class="label-gallery txt26 trans-0-4 is-actived" data-filter="*">
+				All Photo
+			</button>
 
-		<p class="t-center size32 m-l-r-auto">
-			Fusce at risus eget mi auctor pulvinar. Suspendisse maximus venenatis pretium. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam purus purus, lacinia a scelerisque in, luctus vel felis. Donec odio diam, dignissim a efficitur at, efficitur et est. Pellentesque semper est ut pulvinar ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla et leo accumsan, egestas velit ac, fringilla tortor. Sed varius justo sed luctus mattis.
-		</p>
-	</section>
+			<button class="label-gallery txt26 trans-0-4" data-filter=".interior">
+				Interior
+			</button>
 
+			<button class="label-gallery txt26 trans-0-4" data-filter=".food">
+				Food
+			</button>
 
-	{{-- <!-- Video -->
-	<section class="section-video parallax100" style="background-image: url(images/header-menu-01.jpg);">
-		<div class="content-video t-center p-t-225 p-b-250">
-			<span class="tit2 p-l-15 p-r-15">
-				Discover
-			</span>
+			<button class="label-gallery txt26 trans-0-4" data-filter=".events">
+				Events
+			</button>
 
-			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
-				Our Video
-			</h3>
+			<button class="label-gallery txt26 trans-0-4" data-filter=".guests">
+				Vip guests
+			</button>
+		</div> --}}
 
-			<div class="btn-play ab-center size16 hov-pointer m-l-r-auto m-t-43 m-b-33" data-toggle="modal" data-target="#modal-video-01">
-				<div class="flex-c-m sizefull bo-cir bgwhite color1 hov1 trans-0-4">
-					<i class="fa fa-play fs-18 m-l-2" aria-hidden="true"></i>
+		<div class="wrap-gallery isotope-grid flex-w p-l-25 p-r-25">
+			<!-- - -->
+			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom events guests">
+				<img src="frontend/assets/images/testbg1.jpg" alt="IMG-GALLERY">
+
+				<div class="overlay-item-gallery trans-0-4 flex-c-m">
+					<a class="btn-show-gallery flex-c-m fa fa-search" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery"></a>
+				</div>
+			</div>
+
+			<!-- - -->
+			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
+				<img src="frontend/assets/images/testbg1.jpg" alt="IMG-GALLERY">
+
+				<div class="overlay-item-gallery trans-0-4 flex-c-m">
+					<a class="btn-show-gallery flex-c-m fa fa-search" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery"></a>
+				</div>
+			</div>
+
+			<!-- - -->
+			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom events">
+				<img src="frontend/assets/images/testbg1.jpg" alt="IMG-GALLERY">
+
+				<div class="overlay-item-gallery trans-0-4 flex-c-m">
+					<a class="btn-show-gallery flex-c-m fa fa-search" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery"></a>
+				</div>
+			</div>
+
+			<!-- - -->
+			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
+				<img src="frontend/assets/images/testbg1.jpg" alt="IMG-GALLERY">
+
+				<div class="overlay-item-gallery trans-0-4 flex-c-m">
+					<a class="btn-show-gallery flex-c-m fa fa-search" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery"></a>
+				</div>
+			</div>
+
+			<!-- - -->
+			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
+				<img src="frontend/assets/images/testbg1.jpg" alt="IMG-GALLERY">
+
+				<div class="overlay-item-gallery trans-0-4 flex-c-m">
+					<a class="btn-show-gallery flex-c-m fa fa-search" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery"></a>
+				</div>
+			</div>
+
+			<!-- - -->
+			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom interior guests">
+				<img src="frontend/assets/images/testbg1.jpg" alt="IMG-GALLERY">
+
+				<div class="overlay-item-gallery trans-0-4 flex-c-m">
+					<a class="btn-show-gallery flex-c-m fa fa-search" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery"></a>
+				</div>
+			</div>
+
+			<!-- - -->
+			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom interior">
+				<img src="frontend/assets/images/testbg1.jpg" alt="IMG-GALLERY">
+
+				<div class="overlay-item-gallery trans-0-4 flex-c-m">
+					<a class="btn-show-gallery flex-c-m fa fa-search" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery"></a>
+				</div>
+			</div>
+
+			<!-- - -->
+			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom interior">
+				<img src="frontend/assets/images/testbg1.jpg" alt="IMG-GALLERY">
+
+				<div class="overlay-item-gallery trans-0-4 flex-c-m">
+					<a class="btn-show-gallery flex-c-m fa fa-search" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery"></a>
+				</div>
+			</div>
+
+			<!-- - -->
+			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom events">
+				<img src="frontend/assets/images/testbg1.jpg" alt="IMG-GALLERY">
+
+				<div class="overlay-item-gallery trans-0-4 flex-c-m">
+					<a class="btn-show-gallery flex-c-m fa fa-search" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery"></a>
 				</div>
 			</div>
 		</div>
-	</section> --}}
 
-
-	<!-- Delicious & Romantic-->
-	<section class="bg1-pattern p-t-120 p-b-105">
-		<div class="container">
-			<!-- Delicious -->
-			<div class="row">
-				<div class="col-md-6 p-t-45 p-b-30">
-					<div class="wrap-text-delicious t-center">
-						<span class="tit2 t-center">
-							Delicious
-						</span>
-
-						<h3 class="tit3 t-center m-b-35 m-t-5">
-							RECIPES
-						</h3>
-
-						<p class="t-center m-b-22 size3 m-l-r-auto">
-							Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 p-b-30">
-					<div class="wrap-pic-delicious size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-						<img src="frontend/assets/images/testbg1.jpg" alt="IMG-OUR">
-					</div>
-				</div>
-			</div>
-
-
-			<!-- Romantic -->
-			<div class="row p-t-170">
-				<div class="col-md-6 p-b-30">
-					<div class="wrap-pic-romantic size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-						<img src="frontend/assets/images/testbg2.jpg" alt="IMG-OUR">
-					</div>
-				</div>
-
-				<div class="col-md-6 p-t-45 p-b-30">
-					<div class="wrap-text-romantic t-center">
-						<span class="tit2 t-center">
-							Romantic
-						</span>
-
-						<h3 class="tit3 t-center m-b-35 m-t-5">
-							Restaurant
-						</h3>
-
-						<p class="t-center m-b-22 size3 m-l-r-auto">
-							Fusce iaculis, quam quis volutpat cursus, tellus quam varius eros, in euismod lorem nisl in ante. Maecenas imperdiet vulputate dui sit amet vestibulum. Nulla quis suscipit nisl.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<!-- Banner -->
-	<div class="parallax0 parallax100" style="background-image: url(frontend/assets/images/bg1.jpg);">
-		<div class="overlay0-parallax t-center size33"></div>
+		{{-- <div class="pagination flex-c-m flex-w p-l-15 p-r-15 m-t-24 m-b-50">
+			<a href="#" class="item-pagination flex-c-m trans-0-4 active-pagination">1</a>
+			<a href="#" class="item-pagination flex-c-m trans-0-4">2</a>
+			<a href="#" class="item-pagination flex-c-m trans-0-4">3</a>
+		</div> --}}
 	</div>
-
-
-	<!-- Chef -->
-	<section class="section-chef bgwhite p-t-115 p-b-95">
-		<div class="container t-center">
-			<span class="tit2 t-center">
-				Meet Our
-			</span>
-
-			<h3 class="tit5 t-center m-b-50 m-t-5">
-				Chef
-			</h3>
-
-			<div class="row">
-				<div class="col-md-8 col-lg-4 m-l-r-auto p-b-30">
-					<!-- -Block5 -->
-					<div class="blo5 pos-relative p-t-60">
-						<div class="pic-blo5 size14 bo4 wrap-cir-pic hov-img-zoom ab-c-t">
-							<a href="#"><img src="frontend/assets/images/icons/iconuser.jpg" alt="IGM-AVATAR"></a>
-						</div>
-
-						<div class="text-blo5 size34 t-center bo-rad-10 bo7 p-t-90 p-l-35 p-r-35 p-b-30">
-							<a href="#" class="txt34 dis-block p-b-6">
-								Peter Hart
-							</a>
-
-							<span class="dis-block t-center txt35 p-b-25">
-								Chef
-							</span>
-
-							<p class="t-center">
-								Donec porta eleifend mauris ut effici-tur. Quisque non velit vestibulum, lob-ortis mi eget, rhoncus nunc
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-8 col-lg-4 m-l-r-auto p-b-30">
-					<!-- -Block5 -->
-					<div class="blo5 pos-relative p-t-60">
-						<div class="pic-blo5 size14 bo4 wrap-cir-pic hov-img-zoom ab-c-t">
-							<a href="frontend/assets/#"><img src="frontend/assets/images/icons/iconuser.jpg" alt="IGM-AVATAR"></a>
-						</div>
-
-						<div class="text-blo5 size34 t-center bo-rad-10 bo7 p-t-90 p-l-35 p-r-35 p-b-30">
-							<a href="frontend/assets/#" class="txt34 dis-block p-b-6">
-								Joyce Bowman
-							</a>
-
-							<span class="dis-block t-center txt35 p-b-25">
-								Chef
-							</span>
-
-							<p class="t-center">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies felis a sem tempus tempus.
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-8 col-lg-4 m-l-r-auto p-b-30">
-					<!-- -Block5 -->
-					<div class="blo5 pos-relative p-t-60">
-						<div class="pic-blo5 size14 bo4 wrap-cir-pic hov-img-zoom ab-c-t">
-							<a href="#"><img src="frontend/assets/images/icons/iconuser.jpg" alt="IGM-AVATAR"></a>
-						</div>
-
-						<div class="text-blo5 size34 t-center bo-rad-10 bo7 p-t-90 p-l-35 p-r-35 p-b-30">
-							<a href="#" class="txt34 dis-block p-b-6">
-								Peter Hart
-							</a>
-
-							<span class="dis-block t-center txt35 p-b-25">
-								Chef
-							</span>
-
-							<p class="t-center">
-								Phasellus aliquam libero a nisi varius, vitae placerat sem aliquet. Ut at velit nec ipsum iaculis posuere quis in sapien
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
 
 	<!-- Sign up -->
@@ -379,6 +308,7 @@
 			</button>
 		</form>
 	</div>
+
 
 	<!-- Footer -->
 	<footer class="bg1">
@@ -453,13 +383,13 @@
 						<span class="fs-13 color2 m-r-5">
 							<i class="fa fa-twitter" aria-hidden="true"></i>
 						</span>
-						<a href="frontend/assets/#" class="txt15">
+						<a href="#" class="txt15">
 							@colorlib
 						</a>
 
 						<p class="txt14 m-b-18">
 							Activello is a good option. It has a slider built into that displays
-							<a href="frontend/assets/#" class="txt15">
+							<a href="#" class="txt15">
 								https://buff.ly/2zaSfAQ
 							</a>
 						</p>
@@ -541,7 +471,7 @@
 					</div>
 
 					<div class="txt17 p-r-20 p-t-5 p-b-5">
-						Copyright &copy; 2018 All rights reserved  |  This template is made with <i class="fa fa-heart"></i> by <a href="frontend/assets/https://colorlib.com" target="_blank">Colorlib</a>
+						Copyright &copy; 2018 All rights reserved  |  This template is made with <i class="fa fa-heart"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 					</div>
 				</div>
 			</div>
@@ -556,20 +486,7 @@
 		</span>
 	</div>
 
-	<!-- Modal Video 01-->
-	<div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
 
-		<div class="modal-dialog" role="document" data-dismiss="modal">
-			<div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
-
-			<div class="wrap-video-mo-01">
-				<div class="w-full wrap-pic-w op-0-0"><img src="images/icons/video-16-9.jpg" alt="IMG"></div>
-				<div class="video-mo-01">
-					<iframe src="https://www.youtube.com/embed/5k1hSu2gdKE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
 
 <!--===============================================================================================-->
 	<script type="text/javascript" src="frontend/assets/vendor/jquery/jquery-3.2.1.min.js"></script>

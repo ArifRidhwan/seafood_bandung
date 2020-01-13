@@ -20,6 +20,12 @@ Route::get('/about', function () {
 Route::get('/menu', function () {
     return view('frontend.menu');
 });
+Route::get('/gallery', function () {
+    return view('frontend.gallery');
+});
+Route::get('/contact', function () {
+    return view('frontend.contact');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

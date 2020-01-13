@@ -51,15 +51,15 @@
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="">Home</a>
+									<a href="home">Home</a>
 								</li>
 
 								<li>
-									<a href="frontend/menu">Menu</a>
+									<a href="menu">Menu</a>
 								</li>
 
 								<li>
-									<a href="frontend/gallery">Gallery</a>
+									<a href="gallery">Gallery</a>
 								</li>
 
 								<li>
@@ -67,7 +67,7 @@
 								</li>
 
 								<li>
-									<a href="frontend/contact">Contact</a>
+									<a href="contact">Contact</a>
 								</li>
 							</ul>
 						</nav>
@@ -94,30 +94,35 @@
 		<!-- - -->
 		<ul class="menu-sidebar p-t-95 p-b-70">
 			<li class="t-center m-b-13">
-				<a href="frontend/index" class="txt19">Home</a>
+				<a href="home" class="txt19">Home</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="frontend/menu" class="txt19">Menu</a>
+				<a href="menu" class="txt19">Menu</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="frontend/gallery" class="txt19">Gallery</a>
+				<a href="gallery" class="txt19">Gallery</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="frontend/about" class="txt19">About</a>
+				<a href="about" class="txt19">About</a>
 			</li>
 
 			<li class="t-center m-b-33">
-				<a href="frontend/contact" class="txt19">Contact</a>
+				<a href="contact" class="txt19">Contact</a>
 			</li>
 
-			<li class="t-center">
-				<!-- Button3 -->
-				<a href="frontend/reservation" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
-					Reservation
-				</a>
+            <li class="t-center m-b-33">
+                <a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">
+                                        {{ __('Logout') }}
+                                      </a>
+                                       <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                {{-- <a href="contact" class="txt19">Logout</a> --}}
 			</li>
 		</ul>
 
