@@ -40,9 +40,9 @@
 			<div class="container h-full">
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
-					<div class="logo">
+					<div class="image">
 						<a href="home">
-							<img src="frontend/assets/images/icons/logo.png" alt="IMG-LOGO" data-logofixed="frontend/assets/images/icons/logo2.png">
+							<img style="width:200px;height:200px"; src="frontend/assets/images/icons/logoSb2.png"  alt="IMG-LOGO" data-logofixed="frontend/assets/images/icons/logoSB4.png">
 						</a>
 					</div>
 
@@ -268,7 +268,7 @@
 
 				<div class="col-md-6 p-b-30">
 					<div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-						<img src="frontend/assets/images/testbg1.jpg" alt="IMG-OUR">
+						<img src="frontend/assets/images/icons/logoSB4.png" alt="IMG-OUR">
 					</div>
 				</div>
 			</div>
@@ -389,7 +389,7 @@
 								<img src="frontend/assets/images/our-menu-01.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
-								<a href="frontend/assets/#" class="btn2 flex-c-m txt5 ab-c-m size4">
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size4">
 									Lunch
 								</a>
 							</div>
@@ -401,7 +401,7 @@
 								<img src="frontend/assets/images/our-menu-05.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
-								<a href="frontend/assets/#" class="btn2 flex-c-m txt5 ab-c-m size5">
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size5">
 									Dinner
 								</a>
 							</div>
@@ -413,7 +413,7 @@
 								<img src="frontend/assets/images/our-menu-13.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
-								<a href="frontend/assets/#" class="btn2 flex-c-m txt5 ab-c-m size6">
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size6">
 									Happy Hour
 								</a>
 							</div>
@@ -429,7 +429,7 @@
 								<img src="frontend/assets/images/our-menu-08.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
-								<a href="frontend/assets/#" class="btn2 flex-c-m txt5 ab-c-m size7">
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size7">
 									Drink
 								</a>
 							</div>
@@ -441,7 +441,7 @@
 								<img src="frontend/assets/images/our-menu-10.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
-								<a href="frontend/assets/#" class="btn2 flex-c-m txt5 ab-c-m size8">
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size8">
 									Starters
 								</a>
 							</div>
@@ -453,7 +453,7 @@
 								<img src="frontend/assets/images/our-menu-16.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
-								<a href="frontend/assets/#" class="btn2 flex-c-m txt5 ab-c-m size9">
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size9">
 									Dessert
 								</a>
 							</div>
