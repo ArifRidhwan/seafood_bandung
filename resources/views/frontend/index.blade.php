@@ -42,7 +42,7 @@
 					<!-- Logo -->
 					<div class="image">
 						<a href="home">
-							<img style="width:200px;height:200px"; src="frontend/assets/images/icons/logoSb2.png"  alt="IMG-LOGO" data-logofixed="frontend/assets/images/icons/logoSB4.png">
+							<img style="width:200px;height:200px"; src="frontend/assets/images/icons/logoSB.png"  alt="IMG-LOGO" data-logofixed="frontend/assets/images/icons/logo.png">
 						</a>
 					</div>
 
