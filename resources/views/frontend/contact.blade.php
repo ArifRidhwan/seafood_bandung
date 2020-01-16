@@ -44,7 +44,7 @@
 					<!-- Logo -->
 					<div class="logo">
 						<a href="home">
-							<img src="frontend/assets/images/icons/logo.png" alt="IMG-LOGO" data-logofixed="frontend/assets/images/icons/logo2.png">
+							<img style="width:200px;height:200px"; src="frontend/assets/images/icons/logoSB.png" alt="IMG-LOGO" data-logofixed="frontend/assets/images/icons/logosb2.png">
 						</a>
 					</div>
 
@@ -53,7 +53,7 @@
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="home">Home</a>
+									<a href="Seafood">Home</a>
 								</li>
 
 								<li>
@@ -96,7 +96,7 @@
 		<!-- - -->
 		<ul class="menu-sidebar p-t-95 p-b-70">
 			<li class="t-center m-b-13">
-				<a href="home" class="txt19">Home</a>
+				<a href="Seafood" class="txt19">Home</a>
 			</li>
 
 			<li class="t-center m-b-13">
@@ -119,7 +119,7 @@
 		<!-- - -->
 		<div class="gallery-sidebar t-center p-l-60 p-r-60 p-b-40">
 			<!-- - -->
-			<h4 class="txt20 m-b-33">
+			{{-- <h4 class="txt20 m-b-33">
 				Gallery
 			</h4>
 
@@ -160,150 +160,21 @@
 				<a class="item-gallery-sidebar wrap-pic-w" href="frontend/assets/images/testbg2.jpg" data-lightbox="gallery-footer">
 					<img src="frontend/assets/images/testbg2.jpg" alt="GALLERY">
 				</a>
-			</div>
+			</div> --}}
 		</div>
 	</aside>
 
 
-	<!-- Title Page -->
-	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(frontend/assets/images/testbg2.jpg);">
+		<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(frontend/assets/images/bg1.jpg);">
 		<h2 class="tit6 t-center">
-			Contact
+			Contact Us
 		</h2>
-	</section>
-
-
-
-	<!-- Contact form -->
-	<section class="section-contact bg1-pattern p-t-90 p-b-113">
-		<!-- Map -->
-		<div class="container">
-			<div class="map bo8 bo-rad-10 of-hidden">
-				<div class="contact-map size37" id="google_map" data-map-x="40.704644" data-map-y="-74.011987" data-pin="frontend/assets/images/icons/icon-position-map.png" data-scrollwhell="0" data-draggable="1"></div>
-			</div>
-		</div>
-
-		<div class="container">
-			<h3 class="tit7 t-center p-b-62 p-t-105">
-				Send us a Message
-			</h3>
-
-			<form class="wrap-form-reservation size22 m-l-r-auto">
-				<div class="row">
-					<div class="col-md-4">
-						<!-- Name -->
-						<span class="txt9">
-							Name
-						</span>
-
-						<div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
-							<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="name" placeholder="Name">
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<!-- Email -->
-						<span class="txt9">
-							Email
-						</span>
-
-						<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-							<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email" placeholder="Email">
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<!-- Phone -->
-						<span class="txt9">
-							Phone
-						</span>
-
-						<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-							<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="phone" placeholder="Phone">
-						</div>
-					</div>
-
-					<div class="col-12">
-						<!-- Message -->
-						<span class="txt9">
-							Message
-						</span>
-						<textarea class="bo-rad-10 size35 bo2 txt10 p-l-20 p-t-15 m-b-10 m-t-3" name="message" placeholder="Message"></textarea>
-					</div>
-				</div>
-
-				<div class="wrap-btn-booking flex-c-m m-t-13">
-					<!-- Button3 -->
-					<button type="submit" class="btn3 flex-c-m size36 txt11 trans-0-4">
-						Submit
-					</button>
-				</div>
-			</form>
-
-			<div class="row p-t-135">
-				<div class="col-sm-8 col-md-4 col-lg-4 m-l-r-auto p-t-30">
-					<div class="dis-flex m-l-23">
-						<div class="p-r-40 p-t-6">
-							<img src="frontend/assets/images/icons/map-icon.png" alt="IMG-ICON">
-						</div>
-
-						<div class="flex-col-l">
-							<span class="txt5 p-b-10">
-								Location
-							</span>
-
-							<span class="txt23 size38">
-								8th floor, 379 Hudson St, New York, NY 10018
-							</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-8 col-md-3 col-lg-4 m-l-r-auto p-t-30">
-					<div class="dis-flex m-l-23">
-						<div class="p-r-40 p-t-6">
-							<img src="frontend/assets/images/icons/phone-icon.png" alt="IMG-ICON">
-						</div>
-
-
-						<div class="flex-col-l">
-							<span class="txt5 p-b-10">
-								Call Us
-							</span>
-
-							<span class="txt23 size38">
-								(+1) 96 716 6879
-							</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-8 col-md-5 col-lg-4 m-l-r-auto p-t-30">
-					<div class="dis-flex m-l-23">
-						<div class="p-r-40 p-t-6">
-							<img src="frontend/assets/images/icons/clock-icon.png" alt="IMG-ICON">
-						</div>
-
-
-						<div class="flex-col-l">
-							<span class="txt5 p-b-10">
-								Opening Hours
-							</span>
-
-							<span class="txt23 size38">
-								09:30 AM – 11:00 PM <br/>Every Day
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</section>
 
 
 	<!-- Footer -->
 	<footer class="bg1">
-		<div class="container p-t-40 p-b-70">
+		<div class="container p-t-40 p-b-10">
 			<div class="row">
 				<div class="col-sm-6 col-md-4 p-t-50">
 					<!-- - -->
@@ -327,7 +198,9 @@
 							contact@site.com
 						</li>
 					</ul>
+				</div>
 
+				<div class="col-sm-6 col-md-4 p-t-50">
 					<!-- - -->
 					<h4 class="txt13 m-b-32">
 						Opening Times
@@ -343,111 +216,6 @@
 						</li>
 					</ul>
 				</div>
-
-				<div class="col-sm-6 col-md-4 p-t-50">
-					<!-- - -->
-					<h4 class="txt13 m-b-33">
-						Latest twitter
-					</h4>
-
-					<div class="m-b-25">
-						<span class="fs-13 color2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</span>
-						<a href="#" class="txt15">
-							@colorlib
-						</a>
-
-						<p class="txt14 m-b-18">
-							Activello is a good option. It has a slider built into that displays the featured image in the slider.
-							<a href="#" class="txt15">
-								https://buff.ly/2zaSfAQ
-							</a>
-						</p>
-
-						<span class="txt16">
-							21 Dec 2017
-						</span>
-					</div>
-
-					<div>
-						<span class="fs-13 color2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</span>
-						<a href="#" class="txt15">
-							@colorlib
-						</a>
-
-						<p class="txt14 m-b-18">
-							Activello is a good option. It has a slider built into that displays
-							<a href="#" class="txt15">
-								https://buff.ly/2zaSfAQ
-							</a>
-						</p>
-
-						<span class="txt16">
-							21 Dec 2017
-						</span>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4 p-t-50">
-					<!-- - -->
-					<h4 class="txt13 m-b-38">
-						Gallery
-					</h4>
-
-					<!-- Gallery footer -->
-					<div class="wrap-gallery-footer flex-w">
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg3.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg3.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg3.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg3.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg3.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg3.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg3.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg3.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg3.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg3.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg3.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg3.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg3.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg3.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg3.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg3.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg3.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg3.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg3.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg3.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg3.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg3.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg3.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg3.jpg" alt="GALLERY">
-						</a>
-					</div>
-
 				</div>
 			</div>
 		</div>
@@ -456,14 +224,18 @@
 			<div class="container">
 				<div class="flex-sb-m flex-w p-t-22 p-b-22">
 					<div class="p-t-5 p-b-5">
-						<a href="#" class="fs-15 c-white"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-						<a href="#" class="fs-15 c-white"><i class="fa fa-facebook m-l-18" aria-hidden="true"></i></a>
-						<a href="#" class="fs-15 c-white"><i class="fa fa-twitter m-l-18" aria-hidden="true"></i></a>
-					</div>
-
+						<a href="home">
+							<img style="width:150px;height:150px"; src="frontend/assets/images/icons/logoSB.png">
+						</a>
+                    </div>
 					<div class="txt17 p-r-20 p-t-5 p-b-5">
-						Copyright &copy; 2018 All rights reserved  |  This template is made with <i class="fa fa-heart"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-					</div>
+                         <h2 class="txt13 m-b-20">
+                            Slogan Seafood Bandung
+					    </h2>
+                            <h4>Came to us When You Feel Starving</h4>And we Will
+                        <br>
+                            <h4>Restore Your Good Mood</h4>
+                    </div>
 				</div>
 			</div>
 		</div>

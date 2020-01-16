@@ -26,6 +26,12 @@ Route::get('/gallery', function () {
 Route::get('/contact', function () {
     return view('frontend.contact');
 });
+Route::get('/Seafood', function () {
+    return view('frontend.index');
+});
+Route::get('/admin', function () {
+    return view('admin.index');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

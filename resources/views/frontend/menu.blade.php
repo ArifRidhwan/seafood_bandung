@@ -44,7 +44,7 @@
 					<!-- Logo -->
 					<div class="logo">
 						<a href="home">
-							<img src="frontend/assets/images/icons/logo.png" alt="IMG-LOGO" data-logofixed="frontend/assets/images/icons/logo2.png">
+							<img style="width:200px;height:200px"; src="frontend/assets/images/icons/logoSB.png" alt="IMG-LOGO" data-logofixed="frontend/assets/images/icons/logosb2.png">
 						</a>
 					</div>
 
@@ -53,7 +53,7 @@
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="home">Home</a>
+									<a href="Seafood">Home</a>
 								</li>
 
 								<li>
@@ -96,7 +96,7 @@
 		<!-- - -->
 		<ul class="menu-sidebar p-t-95 p-b-70">
 			<li class="t-center m-b-13">
-				<a href="home" class="txt19">Home</a>
+				<a href="Seafood" class="txt19">Home</a>
 			</li>
 
 			<li class="t-center m-b-13">
@@ -119,7 +119,7 @@
 		<!-- - -->
 		<div class="gallery-sidebar t-center p-l-60 p-r-60 p-b-40">
 			<!-- - -->
-			<h4 class="txt20 m-b-33">
+			{{-- <h4 class="txt20 m-b-33">
 				Gallery
 			</h4>
 
@@ -173,7 +173,7 @@
 							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
 						</a>
                     </div>
-                </div>
+                </div>--}}
 	</aside>
 
 
@@ -560,323 +560,10 @@
 				</div>
 			</div>
 		</div>
-	</section>
-
-
-	{{-- <!-- Lunch -->
-	<section class="section-lunch bgwhite">
-		<div class="header-lunch parallax0 parallax100" style="background-image: url(frontend/assets/images/header-menu-01.jpg);">
-			<div class="bg1-overlay t-center p-t-170 p-b-165">
-				<h2 class="tit4 t-center">
-					Lunch
-				</h2>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row p-t-108 p-b-70">
-				<div class="col-md-8 col-lg-6 m-l-r-auto">
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="frontend/assets/images/lunch-01.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Sed varius
-							</a>
-
-							<span class="txt23">
-								Aenean pharetra tortor dui in pellentesque
-							</span>
-
-							<span class="txt22 m-t-20">
-								$29.79
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="frontend/assets/images/lunch-03.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								tempus aliquet
-							</a>
-
-							<span class="txt23">
-								Aenean condimentum ante erat
-							</span>
-
-							<span class="txt22 m-t-20">
-								$45.09
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="frontend/assets/images/lunch-05.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Duis massa
-							</a>
-
-							<span class="txt23">
-								Proin lacinia nisl ut ultricies posuere nulla
-							</span>
-
-							<span class="txt22 m-t-20">
-								$12.75
-							</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-8 col-lg-6 m-l-r-auto">
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="frontend/assets/images/lunch-02.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								sbrisalona
-							</a>
-
-							<span class="txt23">
-								Proin lacinia nisl ut ultricies posuere nulla
-							</span>
-
-							<span class="txt22 m-t-20">
-								$29.79
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="frontend/assets/images/lunch-04.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Cras eget magna
-							</a>
-
-							<span class="txt23">
-								Sed fermentum eros vitae eros
-							</span>
-
-							<span class="txt22 m-t-20">
-								$45.09
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="frontend/assets/images/lunch-06.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Nullam maximus
-							</a>
-
-							<span class="txt23">
-								Duis massa nibh porttitor nec imperdiet eget
-							</span>
-
-							<span class="txt22 m-t-20">
-								$12.75
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<!-- Dinner -->
-	<section class="section-dinner bgwhite">
-		<div class="header-dinner parallax0 parallax100" style="background-image: url(frontend/assets/images/header-menu-02.jpg);">
-			<div class="bg1-overlay t-center p-t-170 p-b-165">
-				<h2 class="tit4 t-center">
-					Dinner
-				</h2>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row p-t-108 p-b-70">
-				<div class="col-md-8 col-lg-6 m-l-r-auto">
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="frontend/assets/images/dinner-01.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Maecenas tristique
-							</a>
-
-							<span class="txt23">
-								Aenean pharetra tortor dui in pellentesque
-							</span>
-
-							<span class="txt22 m-t-20">
-								$29.79
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="frontend/assets/images/dinner-03.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Pine nut sbrisalona
-							</a>
-
-							<span class="txt23">
-								Aenean condimentum ante erat
-							</span>
-
-							<span class="txt22 m-t-20">
-								$45.09
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="frontend/assets/images/dinner-05.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Suspendisse eu
-							</a>
-
-							<span class="txt23">
-								Proin lacinia nisl ut ultricies posuere nulla
-							</span>
-
-							<span class="txt22 m-t-20">
-								$12.75
-							</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-8 col-lg-6 m-l-r-auto">
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="frontend/assets/images/dinner-02.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Cras maximus
-							</a>
-
-							<span class="txt23">
-								Proin lacinia nisl ut ultricies posuere nulla
-							</span>
-
-							<span class="txt22 m-t-20">
-								$29.79
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="frontend/assets/images/dinner-04.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Pine nut sbrisalona
-							</a>
-
-							<span class="txt23">
-								Sed fermentum eros vitae eros
-							</span>
-
-							<span class="txt22 m-t-20">
-								$45.09
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="frontend/assets/images/dinner-06.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Tempor malesuada
-							</a>
-
-							<span class="txt23">
-								Duis massa nibh porttitor nec imperdiet eget
-							</span>
-
-							<span class="txt22 m-t-20">
-								$12.75
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> --}}
-
-
-	{{-- <!-- Sign up -->
-	<div class="section-signup bg1-pattern p-t-85 p-b-85">
-		<form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">
-			<span class="txt5 m-10">
-				Specials Sign up
-			</span>
-
-			<div class="wrap-input-signup size17 bo2 bo-rad-10 bgwhite pos-relative txt10 m-10">
-				<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email-address" placeholder="Email Adrress">
-				<i class="fa fa-envelope ab-r-m m-r-18" aria-hidden="true"></i>
-			</div>
-
-			<!-- Button3 -->
-			<button type="submit" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">
-				Sign-up
-			</button>
-		</form>
-	</div> --}}
-
+    </section>
 
 	<!-- Footer -->
-	<footer class="bg1">
+	<<footer class="bg1">
 		<div class="container p-t-40 p-b-70">
 			<div class="row">
 				<div class="col-sm-6 col-md-4 p-t-50">
@@ -901,7 +588,9 @@
 							contact@site.com
 						</li>
 					</ul>
+				</div>
 
+				<div class="col-sm-6 col-md-4 p-t-50">
 					<!-- - -->
 					<h4 class="txt13 m-b-32">
 						Opening Times
@@ -917,111 +606,6 @@
 						</li>
 					</ul>
 				</div>
-
-				<div class="col-sm-6 col-md-4 p-t-50">
-					<!-- - -->
-					<h4 class="txt13 m-b-33">
-						Latest twitter
-					</h4>
-
-					<div class="m-b-25">
-						<span class="fs-13 color2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</span>
-						<a href="#" class="txt15">
-							@colorlib
-						</a>
-
-						<p class="txt14 m-b-18">
-							Activello is a good option. It has a slider built into that displays the featured image in the slider.
-							<a href="#" class="txt15">
-								https://buff.ly/2zaSfAQ
-							</a>
-						</p>
-
-						<span class="txt16">
-							21 Dec 2017
-						</span>
-					</div>
-
-					<div>
-						<span class="fs-13 color2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</span>
-						<a href="#" class="txt15">
-							@colorlib
-						</a>
-
-						<p class="txt14 m-b-18">
-							Activello is a good option. It has a slider built into that displays
-							<a href="#" class="txt15">
-								https://buff.ly/2zaSfAQ
-							</a>
-						</p>
-
-						<span class="txt16">
-							21 Dec 2017
-						</span>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4 p-t-50">
-					<!-- - -->
-					<h4 class="txt13 m-b-38">
-						Gallery
-					</h4>
-
-					<!-- Gallery footer -->
-					<div class="wrap-gallery-footer flex-w">
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="frontend/assets/images/testbg1.jpg" data-lightbox="gallery-footer">
-							<img src="frontend/assets/images/testbg1.jpg" alt="GALLERY">
-						</a>
-					</div>
-
 				</div>
 			</div>
 		</div>
@@ -1030,14 +614,18 @@
 			<div class="container">
 				<div class="flex-sb-m flex-w p-t-22 p-b-22">
 					<div class="p-t-5 p-b-5">
-						<a href="#" class="fs-15 c-white"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-						<a href="#" class="fs-15 c-white"><i class="fa fa-facebook m-l-18" aria-hidden="true"></i></a>
-						<a href="#" class="fs-15 c-white"><i class="fa fa-twitter m-l-18" aria-hidden="true"></i></a>
-					</div>
-
+						<a href="home">
+							<img style="width:150px;height:150px"; src="frontend/assets/images/icons/logoSB.png">
+						</a>
+                    </div>
 					<div class="txt17 p-r-20 p-t-5 p-b-5">
-						Copyright &copy; 2018 All rights reserved  |  This template is made with <i class="fa fa-heart"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-					</div>
+                         <h2 class="txt13 m-b-20">
+                            Slogan Seafood Bandung
+					    </h2>
+                            <h4>Came to us When You Feel Starving</h4>And we Will
+                        <br>
+                            <h4>Restore Your Good Mood</h4>
+                    </div>
 				</div>
 			</div>
 		</div>
