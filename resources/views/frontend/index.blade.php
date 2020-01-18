@@ -63,21 +63,11 @@
 								</li>
 
 								<li>
-									<a href="about">About</a>
-								</li>
-
-								<li>
 									<a href="contact">Contact</a>
 								</li>
 							</ul>
 						</nav>
 					</div>
-
-					<!-- Social -->
-					<div class="social flex-w flex-l-m p-r-20">
-						<a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>
 
 						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
 					</div>
@@ -103,10 +93,6 @@
 
 			<li class="t-center m-b-13">
 				<a href="gallery" class="txt19">Gallery</a>
-			</li>
-
-			<li class="t-center m-b-13">
-				<a href="about" class="txt19">About</a>
 			</li>
 
 			<li class="t-center m-b-33">
@@ -255,13 +241,10 @@
 						</h3>
 
 						<p class="t-center m-b-22 size3 m-l-r-auto">
-							Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
-						</p>
+                             Seafood Bandung Adalah sebuah toko kecil yang menjual makanan yang berbahan dasar
+                             hewan laut Sesuai dengan namanya Seafood yang berarti segala makanannya berasal dari Laut.
 
-						<a href="about" class="txt4">
-							Our Story
-							<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-						</a>
+						</p>
 					</div>
 				</div>
 
@@ -293,23 +276,8 @@
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="#"><img src="frontend/assets/images/testbg2.jpg" alt="IMG-INTRO"></a>
+								<img src="frontend/assets/images/testbg2.jpg" alt="IMG-INTRO"></a>
 							</div>
-
-							{{-- <div class="wrap-text-blo1 p-t-35">
-								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-									Romantic Restaurant
-								</h4></a>
-
-								<p class="m-b-20">
-									Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
-								</p>
-
-								<a href="#" class="txt4">
-									Learn More
-									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-								</a>
-							</div> --}}
 						</div>
 					</div>
 
@@ -317,47 +285,19 @@
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="#"><img src="frontend/assets/images/testbg1.jpg" alt="IMG-INTRO"></a>
+							<img src="frontend/assets/images/testbg1.jpg" alt="IMG-INTRO"></<img>
 							</div>
-
-							{{-- <div class="wrap-text-blo1 p-t-35">
-								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-									Delicious Food
-								</h4></a>
-
-								<p class="m-b-20">
-									Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh urna
-								</p>
-
-								<a href="#" class="txt4">
-									Learn More
-									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-								</a>
-							</div> --}}
 						</div>
-					</div>
+                    </div>
 
-					{{-- <div class="col-md-4 p-t-30">
+                    <div class="col-md-4 p-t-30">
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="#"><img src="frontend/assets/images/testbg3.jpg" alt="IMG-INTRO"></a>
+							<img src="frontend/assets/images/bg1.jpg" alt="IMG-INTRO"></<img>
 							</div>
-
-							{{-- <div class="wrap-text-blo1 p-t-35">
-								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-									Red Wines You Love
-								</h4></a>
-
-								<p class="m-b-20">
-									Sed ornare ligula eget tortor tempor, quis porta tellus dictum.
-								</p>
-
-								<a href="#" class="txt4">
-									Learn More
-									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-								</a>
-							</div> --}}
+						</div>
+					</div>
 						</div>
 					</div>
 
@@ -974,7 +914,7 @@
 					<div class="wrap-content-slide3 p-b-50 p-t-50">
 						<div class="container">
 							<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
-								<img src="frontend/assets/images/avatar-01.jpg" alt="IGM-AVATAR">
+								<img src="frontend/assets/images/icons/iconuser.jpg" alt="IGM-AVATAR">
 							</div>
 
 							<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
@@ -1002,7 +942,7 @@
 					<div class="wrap-content-slide3 p-b-50 p-t-50">
 						<div class="container">
 							<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
-								<img src="frontend/assets/images/avatar-04.jpg" alt="IGM-AVATAR">
+								<img src="frontend/assets/images/icons/iconuser.jpg" alt="IGM-AVATAR">
 							</div>
 
 							<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
@@ -1030,7 +970,7 @@
 					<div class="wrap-content-slide3 p-b-50 p-t-50">
 						<div class="container">
 							<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
-								<img src="frontend/assets/images/avatar-05.jpg" alt="IGM-AVATAR">
+								<img src="frontend/assets/images/icons/iconuser.jpg" alt="IGM-AVATAR">
 							</div>
 
 							<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
@@ -1082,7 +1022,7 @@
 
 
 	<!-- Blog -->
-	<section class="section-blog bg-white p-t-115 p-b-123">
+	{{-- <section class="section-blog bg-white p-t-115 p-b-123">
 		<div class="container">
 			<div class="title-section-ourmenu t-center m-b-22">
 				<span class="tit2 t-center">
@@ -1181,7 +1121,7 @@
 
 			</div>
 		</div>
-	</section>
+	</section> --}}
 
 
 	<!-- Sign up -->

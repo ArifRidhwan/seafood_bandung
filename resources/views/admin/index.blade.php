@@ -87,7 +87,7 @@
 				<img src="frontend/assets/images/icons/logosb2.png" class="img-responsive" alt="">
 			</div>
 			<div class="profile-usertitle">
-				<div class="profile-usertitle-name">{{Auth::User()->name}}</div>
+				<div class="profile-usertitle-name"></div>
 				<div class="profile-usertitle-status"><span class="indicator label-success"></span>Online</div>
 			</div>
 			<div class="clear"></div>

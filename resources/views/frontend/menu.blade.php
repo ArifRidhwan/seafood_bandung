@@ -65,10 +65,6 @@
 								</li>
 
 								<li>
-									<a href="about">About</a>
-								</li>
-
-								<li>
 									<a href="contact">Contact</a>
 								</li>
 							</ul>
@@ -105,10 +101,6 @@
 
 			<li class="t-center m-b-13">
 				<a href="gallery" class="txt19">Gallery</a>
-			</li>
-
-			<li class="t-center m-b-13">
-				<a href="about" class="txt19">About</a>
 			</li>
 
 			<li class="t-center m-b-33">

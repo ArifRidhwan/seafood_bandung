@@ -14,9 +14,6 @@
 Route::get('/', function () {
     return redirect('login');
 });
-Route::get('/about', function () {
-    return view('frontend.about');
-});
 Route::get('/menu', function () {
     return view('frontend.menu');
 });

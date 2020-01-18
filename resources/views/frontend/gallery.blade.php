@@ -65,10 +65,6 @@
 								</li>
 
 								<li>
-									<a href="about">About</a>
-								</li>
-
-								<li>
 									<a href="contact">Contact</a>
 								</li>
 							</ul>
@@ -105,11 +101,7 @@
 
 			<li class="t-center m-b-13">
 				<a href="gallery" class="txt19">Gallery</a>
-			</li>
-
-			<li class="t-center m-b-13">
-				<a href="about" class="txt19">About</a>
-			</li>
+            </li>
 
 			<li class="t-center m-b-33">
 				<a href="contact" class="txt19">Contact</a>
@@ -241,7 +233,7 @@
 	</div>
 
     <!-- Footer -->
-	<<footer class="bg1">
+	<footer class="bg1">
 		<div class="container p-t-40 p-b-70">
 			<div class="row">
 				<div class="col-sm-6 col-md-4 p-t-50">
