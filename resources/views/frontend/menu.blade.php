@@ -100,7 +100,7 @@
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="gallery" class="txt19">Gallery</a>
+				<a href="galleryfoto" class="txt19">Gallery</a>
 			</li>
 
 			<li class="t-center m-b-33">
