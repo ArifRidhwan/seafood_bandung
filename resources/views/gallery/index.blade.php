@@ -81,7 +81,7 @@
 			</div>
 		</div><!-- /.container-fluid -->
 	</nav>
-	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+	<div id="sidebar-collapse" class="col-sm-2 col-lg-2 sidebar">
 		<div class="profile-sidebar">
 			<div class="profile-userpic">
 				<img src="frontend/assets/images/icons/logosb2.png" class="img-responsive" alt="">
@@ -93,11 +93,11 @@
 			<div class="clear"></div>
 		</div>
 		<div class="divider"></div>
-		<form role="search">
+		{{-- <form role="search">
 			<div class="form-group">
 				<input type="text" class="form-control" placeholder="Search">
 			</div>
-		</form>
+		</form> --}}
 		<ul class="nav menu">
 			<li class="active"><a href="index.html"><em class="">&nbsp;</em> Gallery</a></li>
 			<li><a href="widgets.html"><em class="">&nbsp;</em>Menu</a></li>
@@ -128,7 +128,7 @@
 		</ul>
 	</div><!--/.sidebar-->
 
-	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+	<div class="col-sm-9 col-sm-offset-2 col-lg-10 col-lg-offset-2 main">
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="#">
@@ -147,21 +147,13 @@
                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+ Gallery</button>
             </div>
 <br>
-		<div class="panel panel-container">
+		<div>
 			<div class="row">
 				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
 					<div class="panel panel-teal panel-widget border-right">
-						<div class="row no-padding"><em class="fa fa-xl fa-shopping-cart color-blue"></em>
+						<div class="row no-padding"><i class='far fa-image' style='font-size:36px'></i>
 							<div class="large">{{$gallery}}</div>
 							<div class="text-muted">New Posted Photo</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-					<div class="panel panel-blue panel-widget border-right">
-						<div class="row no-padding"><em class="fa fa-xl fa-comments color-orange"></em>
-							<div class="large"></div>
-							<div class="text-muted">Comments</div>
 						</div>
 					</div>
 				</div>
@@ -177,9 +169,10 @@
         </div>
    <div class="container">
     <div class="table-responsive">
-                                <table class="table table-striped text-center">
-                                <thead class="thead-dark">
-                                    <tr>
+                                <table class="table table-bordered">
+                                <thead class="thead-dark" >
+                                    <tr class="table-active">
+                                        <th scope="col">No</th>
 										<th scope="col">Nama Foto</th>
 										<th scope="col">Desc Foto</th>
                                         <th scope="col">Foto</th>
@@ -189,7 +182,7 @@
                                     @php $no = 1; @endphp
                                     @foreach($foto as $data)
                                     <tr>
-										{{-- <td>{{ $no++ }}</td> --}}
+                                         <td>{{ $no++ }}</td>
 										<td>{{ $data->nama_foto }}</td>
                                         <td>{{ $data->desc_foto }}</td>
                                         <td><img src="{{ asset('assets/img/'.$data->foto)}}" width="100"></td>
@@ -271,11 +264,11 @@
 				<div class="form-group row mb-4">
             <div class="col-sm-12 col-md-10">
               <div id="image-preview" class="image-preview">
-                <input type="file" name="photo" id="image-upload" />
+                <input type="file" name="foto" id="image-upload" />
 
             @if ($errors->has('photo'))
                 <span class="invalid-feedback" role="alert">
-                    <strong>{{ $errors->first('photo') }}</strong>
+                    <strong>{{ $errors->first('foto') }}</strong>
                 </span>
             @endif
               </div>

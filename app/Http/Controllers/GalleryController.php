@@ -28,9 +28,9 @@ class GalleryController extends Controller
                 if ($request->hasFile('foto')) {
                     $file = $request->file('foto');
                     $path = public_path() . '/assets/img/';
-                    $filename = str_random(6) . '_' . $file->getClientOriginalName();
+                    $filename ='_' . $file->getClientOriginalName();
                     $upload = $file->move($path, $filename);
-                    $nama_foto->nama_foto = $filename;
+                    $foto->foto = $filename;
                 }
                 $foto->save();
                 // toastr()->success('Galley Foto berhasil Dibuat!');
