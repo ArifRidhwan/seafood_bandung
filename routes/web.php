@@ -26,14 +26,17 @@ Route::get('/contact', function () {
 Route::get('/Seafood', function () {
     return view('frontend.index');
 });
-Route::get('/gallery', function () {
-    return view('admin.gallery');
-});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 Route::group(['middleware' => 'auth'], function(){
-Route::resource('/admin/gallery/','GalleryController');
+
+Route::group(['prefix' => 'admin'], function () {
+Route::resource('/gallery','GalleryController');
+});
+
 
 
 

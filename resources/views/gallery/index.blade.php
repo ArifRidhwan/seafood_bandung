@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Admin S'B</title>
+    <title>Admin S'B</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="/lumino/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/lumino/css/font-awesome.min.css" rel="stylesheet">
 	<link href="/lumino/css/datepicker3.css" rel="stylesheet">
@@ -81,7 +82,7 @@
 			</div>
 		</div><!-- /.container-fluid -->
 	</nav>
-	<div id="sidebar-collapse" class="col-sm-2 col-lg-2 sidebar">
+	<div id="sidebar-collapse" style="color "class="col-sm-2 col-lg-2 sidebar">
 		<div class="profile-sidebar">
 			<div class="profile-userpic">
 				<img src="frontend/assets/images/icons/logosb2.png" class="img-responsive" alt="">
@@ -151,7 +152,7 @@
 			<div class="row">
 				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
 					<div class="panel panel-teal panel-widget border-right">
-						<div class="row no-padding"><i class='far fa-image' style='font-size:36px'></i>
+						<div class ="row no-padding"><i class="fa fa-picture-o fa-3x" aria-hidden="true"></i>
 							<div class="large">{{$gallery}}</div>
 							<div class="text-muted">New Posted Photo</div>
 						</div>
@@ -159,7 +160,7 @@
 				</div>
 				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
 					<div class="panel panel-orange panel-widget border-right">
-						<div class="row no-padding"><em class="fa fa-xl fa-users color-teal"></em>
+						<div class="row no-padding"><i class="fa fa-user-circle fa-3x"  aria-hidden="true"></i>
 							<div class="large">{{$user}}</div>
 							<div class="text-muted">New Users</div>
 						</div>
@@ -167,6 +168,7 @@
 				</div>
 			</div><!--/.row-->
         </div>
+
    <div class="container">
     <div class="table-responsive">
                                 <table class="table table-bordered">
@@ -186,39 +188,16 @@
 										<td>{{ $data->nama_foto }}</td>
                                         <td>{{ $data->desc_foto }}</td>
                                         <td><img src="{{ asset('assets/img/'.$data->foto)}}" width="100"></td>
+                                         <td>
+                               <a href="{{ route('gallery.edit',$data->id) }}"
+                               class="btn btn-sm btn-success">Edit Data</a>
+                                        </td>
                                     </tr>
                                     @endforeach
                                 </table>
                             </div>
-                                                        {{-- <td>
-                                                            <ol>
-                                                                @foreach($data->tag as $isi)
-                                                                <li>{{ $isi->nama_tag }}</li>
-                                                                @endforeach
-                                                            </ol>
-                                                        </td> --}}
-                            {{-- <td>{!! $data->konten !!}</td>
-                            <td>{{ $data->kategori->nama_kategori}}</td>
-                            <td>{{ $data->slug }}</td> --}}
-                                        {{-- <td>
-                                            <a href="{{ route('artikel.edit',$data->id) }}"
-                                            class="btn btn-sm btn-success">Edit Data</a>
-										</td>
-										<td>
-                                            <a href="{{ route('artikel.show',$data->id) }}"
-                                            class="btn btn-sm btn-primary">Show Data</a>
-                                        </td>
-                                        <td>
-                                            <form action="{{ route('artikel.destroy',$data->id) }}" method="post">
-                                            {{csrf_field()}}
-                                                <input type="hidden" name="_method" value="DELETE">
-                                                <button class="btn btn-sm btn-danger" type="submit">
-                                                    Hapus Data
-                                                </button>
-                                            </form>
-                                        {{-- </td> --}}
 
-	<br/>
+                            <br/>
 	<!-- Tombol untuk menampilkan modal-->
 
 	<!-- Modal -->
@@ -231,11 +210,11 @@
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					<h4 class="modal-title">Tambah Data Photo</h4>
                 </div>
-                <form action="{{ route('store') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ route('gallery.store') }}" method="post" enctype="multipart/form-data">
                     @csrf
                 <!-- body modal -->
                 <div class="form-group row mb-4">
-                <label class="col-form-label text-md-right col-12 col-md-2 col-lg-2">Name Photo</label>
+                    <label class="col-form-label text-md-right col-12 col-md-2 col-lg-2">Name Photo</label>
                 <div class="col-sm-12 col-md-10">
                     <input name="nama_foto" type="text" class="form-control{{ $errors->has('nama_foto') ? ' is-invalid' : '' }}" required>
 
@@ -243,7 +222,7 @@
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('nama_foto') }}</strong>
                     </span>
-                @endif
+                    @endif
                 </div>
             </div>
 
@@ -262,7 +241,7 @@
 
 
 				<div class="form-group row mb-4">
-            <div class="col-sm-12 col-md-10">
+                    <div class="col-sm-12 col-md-10">
               <div id="image-preview" class="image-preview">
                 <input type="file" name="foto" id="image-upload" />
 
@@ -280,28 +259,24 @@
           <div class="form-group row mb-4">
             <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
             <div class="col-sm-12 col-md-7">
-              <button type="submit" class="btn btn-primary">Buat Post</button>
+                <button type="submit" class="btn btn-primary">Buat Post</button>
               {{-- <a href="{{ route('artikel.index') }}" class="btn btn-secondary">Kembali</a> --}}
             </div>
           </div>
         </form>
-        </div>
+    </div>
       </div>
     </div>
   </div>
-				<!-- footer modal -->
-				{{-- <div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Tutup Modal</button>
-				</div> --}}
-			</div>
-		</div>
-	</div>
-   </div>
+</div>
+</div>
+</div>
+</div>
 </body>
 </html>
 
-	<script src="/lumino/js/jquery-1.11.1.min.js"></script>
-	<script src="/lumino/js/bootstrap.min.js"></script>
+<script src="/lumino/js/jquery-1.11.1.min.js"></script>
+<script src="/lumino/js/bootstrap.min.js"></script>
 	<script src="/lumino/js/chart.min.js"></script>
 	<script src="/lumino/js/chart-data.js"></script>
 	<script src="/lumino/js/easypiechart.js"></script>
@@ -322,3 +297,34 @@
 
 </body>
 </html>
+
+
+{{-- <td>
+<ol>
+@foreach($data->tag as $isi)
+<li>{{ $isi->nama_tag }}</li>
+@endforeach
+</ol>
+</td> --}}
+{{-- <td>{!! $data->konten !!}</td>
+<td>{{ $data->kategori->nama_kategori}}</td>
+<td>{{ $data->slug }}</td> --}}
+{{--<td>
+<a href="{{ route('artikel.show',$data->id) }}"
+class="btn btn-sm btn-primary">Show Data</a>
+</td>
+<td>
+<form action="{{ route('artikel.destroy',$data->id) }}" method="post">
+{{csrf_field()}}
+<input type="hidden" name="_method" value="DELETE">
+<button class="btn btn-sm btn-danger" type="submit">
+    Hapus Data
+</button>
+</form>
+{{-- </td> --}}
+
+
+<!-- footer modal -->
+{{-- <div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Tutup Modal</button>
+</div> --}}
