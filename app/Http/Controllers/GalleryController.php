@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Gallery;
+use App\Menu;
+use Illuminate\Support\Facades\File;
+use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Session;
 
 class GalleryController extends Controller
@@ -13,8 +16,9 @@ class GalleryController extends Controller
         $foto= Gallery::all();
         $user= User::count();
         $gallery = Gallery::count();
-        return view('gallery.index',compact('user','gallery','foto'));
+        $menus = Menu::count();
 
+        return view('gallery.index',compact('menus','user','gallery','foto'));
 
     }
 
@@ -23,7 +27,8 @@ class GalleryController extends Controller
         $foto= Gallery::findOrFail($id);
         $user= User::count();
         $gallery = Gallery::count();
-        return view ('gallery.edit',compact('user','gallery','foto'));
+        $menus = Menu::count();
+        return view ('gallery.edit',compact('menu','user','gallery','foto'));
     }
 
 
@@ -41,7 +46,7 @@ class GalleryController extends Controller
                 $foto->save();
                 Session::flash("flash_notification", [
            "level" => "success",
-           "message" => "Foto <b>$foto->nama_foto</b> berhasil diedit!"
+           "message" => "Foto <b>$foto->nama_foto</b> berhasil Di Ubah!"
                    ]);
 
                 // toastr()->success('Galley Foto berhasil Dibuat!');
@@ -68,8 +73,41 @@ class GalleryController extends Controller
                 }
                 $foto->save();
                 // toastr()->success('Galley Foto berhasil Dibuat!');
-                 return redirect()->route('gallery.index');
+
+                Session::flash("flash_notification", [
+                    "level" => "success",
+                    "message" => "Gallery Foto <b>$foto->nama_foto</b> berhasil Ditambahkan!"
+                    ]);
+                    return redirect()->route('gallery.index');
     }
+      public function destroy($id)
+    {
+
+                $foto = Gallery::findOrFail($id);
+                # Foto
+                if ($foto->foto) {
+                    $old_foto = $foto->file;
+                    $filepath = public_path().'/assets/img/'.$foto->foto;
+                }
+                try {
+                    File::delete($filepath);
+                } catch (FileNotFoundException $e) {
+                    //Exception $e;
+                }
+                // toastr()->success('Galley Foto berhasil Dibuat!');
+
+                $foto->delete();
+
+                Session::flash("flash_notification", [
+            "level" => "danger",
+            "message" => "Gallery Foto <b>$foto->nama_foto</b> berhasil dihapus!"
+        ]);
+
+                return redirect()->route('gallery.index');
+                // $filename ='_' . $file->getClientOriginalName();
+                // $upload = $file->move($path, $filename);
+                // $foto->foto = $filename;
+            }
         // $request->validate([
         //     'judul' => 'required|unique:artikels',
         //     'konten' => 'required|min:50',

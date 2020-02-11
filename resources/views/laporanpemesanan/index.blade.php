@@ -107,7 +107,7 @@
 		<ul class="nav menu">
 			<li class=""><a href={{route('gallery.index')}}><em class="">&nbsp;</em> Gallery</a></li>
             <li><a href="{{route ('menu.index')}}"><em class="">&nbsp;</em>Menu</a></li>
-            <li><a href="{{route ('laporan.index')}}"><em class="">&nbsp;</em>Laporan Pembelian</a></li>
+            <li><a href="{{route('laporan.index')}}"><em class="">&nbsp;</em>Laporan Pembelian</a></li>
             <li><a href="/Seafood"><em class="">&nbsp;</em>Web</a></li>
 			{{-- <li><a href="elements.html"><em class="fa fa-toggle-off">&nbsp;</em> UI Elements</a></li>
 			<li><a href="panels.html"><em class="fa fa-clone">&nbsp;</em> Alerts &amp; Panels</a></li>
@@ -145,11 +145,11 @@
 
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Gallery</h1>
+				<h1 class="page-header">Laporan Pemesanan</h1>
 			</div>
         </div><!--/.row-->
         	<div>
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+ Gallery</button>
+                {{-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+ Gallery</button> --}}
             </div>
             <br>
             <div>
@@ -186,7 +186,7 @@
 						</div>
 					</div>
 				</div>
-			</div><!--/.row--> --}}
+			</div><!--/.row-->
         </div>
 
      <div class="table-responsive">
@@ -223,7 +223,7 @@
 	<!-- Tombol untuk menampilkan modal-->
 
 	<!-- Modal -->
-	<div id="myModal" class="modal fade" role="dialog">
+	{{-- <div id="myModal" class="modal fade" role="dialog">
 		<div class="modal-dialog">
 			<!-- konten modal-->
 			<div class="modal-content">

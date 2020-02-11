@@ -35,6 +35,10 @@ Route::group(['middleware' => 'auth'], function(){
 
 Route::group(['prefix' => 'admin'], function () {
 Route::resource('/gallery','GalleryController');
+Route::resource('/menu','MenuController');
+Route::resource('/laporan', 'LaporanPemesananController');
+
+
 });
 
 

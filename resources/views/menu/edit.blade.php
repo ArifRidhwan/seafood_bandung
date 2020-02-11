@@ -72,7 +72,7 @@
 			</div>
 		</form> --}}
 		<ul class="nav menu">
-			<li class="active"><a href="{{route('gallery.index')}}"><em class="">&nbsp;</em> Gallery</a></li>
+			<li class="active"><a href={{route('gallery.index')}}><em class="">&nbsp;</em> Gallery</a></li>
             <li><a href="{{route('menu.index')}}"><em class="">&nbsp;</em>Menu</a></li>
             <li><a href="{{route('laporan.index')}}"><em class="">&nbsp;</em>Laporan Pembelian</a></li>
             <li><a href="/Seafood"><em class="">&nbsp;</em>Web</a></li>
@@ -124,26 +124,37 @@
           <div class="container-fluid">
             <div class="card">
               <div class="card-body">
-                <form action="{{ route('gallery.update', $foto->id) }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('menu.update', $menu->id) }}" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="_method" value="PATCH">
                     @csrf
                       <div class="form-row">
                         <div class="form-group col-lg-6">
-                            <label for="">Nama Foto</label>
-                            <input type="text" class="form-control" value="{{ $foto->nama_foto }}" name="nama_foto">
+                            <label for="">Title</label>
+                            <input type="text" class="form-control" value="{{ $menu->menu }}" name="menu">
                         </div>
                     </div>
-                            <div class="form-group col-lg-8 my-auto">
-                                <label for="">Desc Foto</label>
-                                <input type="text" class="form-control" value="{{ $foto->desc_foto }}" name="desc_foto">
-                            </div>
-                        </div>
+        <div class="row">
+            <label class="col-sm-2 col-form-label">{{ __('Harga') }}</label>
+            <div class="col-sm-7">
+                <div class="form-group{{ $errors->has('harga') ? ' has-danger' : '' }}">
+                    <select class="form-control selectric" name="harga" required>
+                        @if($menu->harga == "Rp.5000 (1 porsi)")
+            <option value="Rp.5000 (1 porsi)"selected>Rp.5000 (1 porsi)</option>
+            <option value="Rp.10000(2 porsi)">Rp.10000(2 porsi)</option>
+            @else
+            <option value="Rp.5000 (1 porsi)">Rp.5000 (1 porsi)</option>
+            <option value="Rp.10000(2 porsi)"selected>Rp.10000(2 porsi)</option>
+            @endif
+            </select>
+            </div>
+        </div>
+    </div>
                       <div class="form-row">
                         <div class="form-group col-lg-4">
-                            <img src="{{ asset('assets/img/'.$foto->foto)}}" width="100" alt="product image">
+                            <img src="{{ asset('assets/menu_img/'.$menu->foto)}}" width="100" alt="product image">
                         </div>
                     <button type="submit" class="btn btn-md btn-info">Simpan</button>
-                    <a name="" id="" class="btn btn-md btn-warning" href="{{route('gallery.index')}}" role="button">Kembali</a>
+                    <a name="" id="" class="btn btn-md btn-warning" href="{{route('menu.index')}}" role="button">Kembali</a>
             </form>
             </div>
           </div>

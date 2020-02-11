@@ -61,7 +61,7 @@
 					 <li class="dropdown"><a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
 						<em class="fa fa-bell"></em><span class="label label-info">5</span>
 					</a> --}}
-						{{-- <ul class="dropdown-menu dropdown-alerts">
+						<ul class="dropdown-menu dropdown-alerts">
 							<li><a href="#">
 								<div><em class="fa fa-envelope"></em> 1 New Message
 									<span class="pull-right text-muted small">3 mins ago</span></div>
@@ -80,7 +80,7 @@
 					</li>
 				</ul>
 			</div>
-		{{-- </div><!-- /.container-fluid --> --}}
+		</div><!-- /.container-fluid -->
 	</nav>
 	 <div id="sidebar-collapse" style="color "class="col-sm-2 col-lg-2 sidebar">
 		 <div class="profile-sidebar">
@@ -105,9 +105,9 @@
 
 
 		<ul class="nav menu">
-			<li class=""><a href={{route('gallery.index')}}><em class="">&nbsp;</em> Gallery</a></li>
-            <li><a href="{{route ('menu.index')}}"><em class="">&nbsp;</em>Menu</a></li>
-            <li><a href="{{route ('laporan.index')}}"><em class="">&nbsp;</em>Laporan Pembelian</a></li>
+			<li class=""><a href="{{route('gallery.index')}}"><em class="">&nbsp;</em> Gallery</a></li>
+            <li><a href="{{route('menu.index')}}"><em class="">&nbsp;</em>Menu</a></li>
+            <li><a href="{{route('laporan.index')}}"><em class="">&nbsp;</em>Laporan Pembelian</a></li>
             <li><a href="/Seafood"><em class="">&nbsp;</em>Web</a></li>
 			{{-- <li><a href="elements.html"><em class="fa fa-toggle-off">&nbsp;</em> UI Elements</a></li>
 			<li><a href="panels.html"><em class="fa fa-clone">&nbsp;</em> Alerts &amp; Panels</a></li>
@@ -139,17 +139,17 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href=""><em class="fa fa-home"></em></a></li>
-				<li class="">Gallery</li>
+				<li class="active">Menu</li>
 			</ol>
 		</div><!--/.row-->
 
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Gallery</h1>
+				<h1 class="page-header">Menu</h1>
 			</div>
         </div><!--/.row-->
         	<div>
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+ Gallery</button>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+ Menu</button>
             </div>
             <br>
             <div>
@@ -157,7 +157,7 @@
             </div>
 
 <br>
-        <div>
+		<div>
 			<div class="row">
 				<div class="col-xs-2 col-md-3 col-lg-3 no-padding">
 					<div class="panel panel-teal panel-widget border-right">
@@ -167,9 +167,7 @@
 						</div>
 					</div>
                 </div>
-
-		<div>
-			<div class="row">
+                <div class="row">
 				<div class="col-xs-2 col-md-3 col-lg-3 no-padding">
 					<div class="panel panel-teal panel-widget border-right">
 						<div class ="row no-padding"><i class="fa fa-picture-o fa-3x" aria-hidden="true"></i>
@@ -178,38 +176,40 @@
 						</div>
 					</div>
 				</div>
-				{{-- <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-					<div class="panel panel-orange panel-widget ">
-						<div class="row no-padding"><i class="fa fa-user-circle fa-3x"  aria-hidden="true"></i>
-							<div class="large">{{$user}}</div>
-							<div class="text-muted">New Users</div>
-						</div>
-					</div>
-				</div>
-			</div><!--/.row--> --}}
+                    {{-- <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
+                        <div class="panel panel-orange panel-widget ">
+                            <div class="row no-padding"><i class="fa fa-user-circle fa-3x"  aria-hidden="true"></i>
+                                <div class="large">{{$user}}</div>
+                                <div class="text-muted">New Users</div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.row--> --}}
         </div>
 
+     <div class="container">
      <div class="table-responsive">
 				<div class="col-xs-2 col-md-11 col-lg-3">
                                 <table class="table table-bordered">
                                 <thead class="thead-dark" >
                                     <tr class="table-active">
                                         <th scope="col">No</th>
-										<th scope="col">Nama Foto</th>
-										<th scope="col">Desc Foto</th>
+										<th scope="col">Menu</th>
+										<th scope="col">Harga</th>
                                         <th scope="col">Foto</th>
                                         <th colspan="3" class="text-center">Aksi</th>
                                     </tr>
                                     </thead>
                                     @php $no = 1; @endphp
-                                    @foreach($foto as $data)
+
+                                    @foreach($menu as $data)
                                     <tr>
-                                         <td>{{ $no++ }}</td>
-										<td>{{ $data->nama_foto }}</td>
-                                        <td>{{ $data->desc_foto }}</td>
+                                        <td>{{ $no++ }}</td>
+										<td>{{ $data->menu }}</td>
+                                        <td>{{ $data->harga }}</td>
                                         <td><img src="{{ asset('assets/img/'.$data->foto)}}" width="100"></td>
-                                         <td><a href="{{ route('gallery.edit',$data->id) }}"class="btn btn-sm btn-success">Edit Data</a></td>
-                                         <td><form action="{{ route('gallery.destroy',$data->id) }}" method="post">
+                                        <td><a href="{{ route('menu.edit',$data->id) }}"class="btn btn-sm btn-success">Edit Data</a></td>
+                                        <td><form action="{{ route('menu.destroy',$data->id) }}" method="post">
                             {{csrf_field()}}
                                 <input type="hidden" name="_method" value="DELETE">
                                 <button class="btn btn-sm btn-danger" type="submit">Delete
@@ -220,6 +220,7 @@
                                     @endforeach
                                 </table>
                             </div>
+                            <br/>
 	<!-- Tombol untuk menampilkan modal-->
 
 	<!-- Modal -->
@@ -230,35 +231,35 @@
 				<!-- heading modal -->
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Tambah Data Photo</h4>
+					<h4 class="modal-title">Tambah Data Menu</h4>
                 </div>
-                <form action="{{ route('gallery.store') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ route('menu.store') }}" method="post" enctype="multipart/form-data">
                     @csrf
                 <!-- body modal -->
                 <div class="form-group row mb-4">
-                    <label class="col-form-label text-md-right col-12 col-md-2 col-lg-2">Title</label>
-                <div class="col-sm-3 col-md-5">
-                    <input name="nama_foto" type="text" class="form-control{{ $errors->has('nama_foto') ? ' is-invalid' : '' }}" required>
+                    <label class="col-form-label text-md-right-col-12 col-md-2 col-lg-2">Menu</label>
+                <div class="col-sm-7 col-md-7">
+                    <input name="menu" type="text" class="form-control{{ $errors->has('menu') ? ' is-invalid' : '' }}" required>
 
-                @if ($errors->has('nama_foto'))
+                @if ($errors->has('menu'))
                     <span class="invalid-feedback" role="alert">
-                        <strong>{{ $errors->first('nama_foto') }}</strong>
+                        <strong>{{ $errors->first('menu') }}</strong>
                     </span>
                     @endif
                 </div>
             </div>
 
-            <div class="form-group row mb-4">
-                <label class="col-form-label text-md-right col-12 col-md-2 col-lg-2">Desc Photo</label>
-                <div class="col-sm-7 col-md-7">
-                    <textarea name="desc_foto" cols="5" rows="5" type="description" class="form-control{{ $errors->has('desc_foto') ? ' is-invalid' : '' }}" required></textarea>
-
-                @if ($errors->has('desc_foto'))
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $errors->first('desc_foto') }}</strong>
-                    </span>
-                @endif
-                </div>
+            <div class="row">
+            <label class="col-sm-2 col-form-label">{{ __('Harga') }}</label>
+            <div class="col-sm-7">
+            <div class="form-group{{ $errors->has('harga') ? ' has-danger' : '' }}">
+            <select class="form-control selectric" name="harga" required>
+            <option value="">- Harga & Porsi -</option>
+            <option value="Rp.5000 (1 porsi)">Rp.5000 (1 porsi)</option>
+            <option value="Rp.10000(2 porsi)">Rp.10000(2 porsi)</option>
+            </select>
+            </div>
+            </div>
             </div>
 
 

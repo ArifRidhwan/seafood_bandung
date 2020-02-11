@@ -61,7 +61,7 @@
 								</li>
 
 								<li>
-									<a href="gallery">Gallery</a>
+									<a href="galleryfoto">Gallery</a>
 								</li>
 
 								<li>
