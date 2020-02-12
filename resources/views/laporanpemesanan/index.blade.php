@@ -177,6 +177,17 @@
 							<div class="text-muted">New Posted Photo</div>
 						</div>
 					</div>
+                </div>
+
+        <div>
+			<div class="row">
+				<div class="col-xs-2 col-md-3 col-lg-3 no-padding">
+					<div class="panel panel-teal panel-widget border-right">
+						<div class ="row no-padding"><i class="fa fa-picture-o fa-3x" aria-hidden="true"></i>
+							<div class="large">{{$laporan}}</div>
+							<div class="text-muted">Laporan Pemesanan</div>
+						</div>
+					</div>
 				</div>
 				{{-- <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
 					<div class="panel panel-orange panel-widget ">
@@ -187,41 +198,9 @@
 					</div>
 				</div>
 			</div><!--/.row-->
-        </div>
+        </div>--}}
 
-     <div class="table-responsive">
-				<div class="col-xs-2 col-md-11 col-lg-3">
-                                <table class="table table-bordered">
-                                <thead class="thead-dark" >
-                                    <tr class="table-active">
-                                        <th scope="col">No</th>
-										<th scope="col">Nama Foto</th>
-										<th scope="col">Desc Foto</th>
-                                        <th scope="col">Foto</th>
-                                        <th colspan="3" class="text-center">Aksi</th>
-                                    </tr>
-                                    </thead>
-                                    @php $no = 1; @endphp
-                                    @foreach($foto as $data)
-                                    <tr>
-                                         <td>{{ $no++ }}</td>
-										<td>{{ $data->nama_foto }}</td>
-                                        <td>{{ $data->desc_foto }}</td>
-                                        <td><img src="{{ asset('assets/img/'.$data->foto)}}" width="100"></td>
-                                         <td><a href="{{ route('gallery.edit',$data->id) }}"class="btn btn-sm btn-success">Edit Data</a></td>
-                                         <td><form action="{{ route('gallery.destroy',$data->id) }}" method="post">
-                            {{csrf_field()}}
-                                <input type="hidden" name="_method" value="DELETE">
-                                <button class="btn btn-sm btn-danger" type="submit">Delete
-                                <i class="fas fa-fw fa-trash-alt"></i>
-                                </button>
-                            </form></td>
-                                    </tr>
-                                    @endforeach
-                                </table>
-                            </div>
 	<!-- Tombol untuk menampilkan modal-->
-
 	<!-- Modal -->
 	{{-- <div id="myModal" class="modal fade" role="dialog">
 		<div class="modal-dialog">
@@ -287,6 +266,43 @@
           </div>
         </form>
     </div>
+    <div class="table-responsive">
+				<div class="col-xs-9 col-md-12 col-lg-8" >
+                                <table class="table table-bordered">
+                                <thead class="thead-dark" >
+                                    <tr style="background-color:lavender;" class="table-active">
+                                        <th scope="col">No</th>
+										<th width="80px" scope="col">ID Ktp</th>
+										<th width="130px" scope="col">Nama Lengkap</th>
+                                        <th width="" scope="col">Alamat</th>
+                                        <th width="130px" scope="col">Keterangan Pesanan</th>
+                                        <th width="" scope="col">Makanan yang Dipesan</th>
+                                        <th width="" colspan="3" class="text-center">Aksi</th>
+                                    </tr>
+                                    </thead>
+                                    @php $no = 1; @endphp
+                                    @foreach($laporanpemesanan as $data)
+                                    <tr>
+                                         <td>{{ $no++ }}</td>
+										<td>{{ $data->nomor_id_ktp}}</td>
+                                        <td>{{ $data->nama_lengkap }}</td>
+                                        <td width="130px">{{ $data->alamat }}</td>
+                                        <td>{{ $data->antar_ambil_pesanan }}</td>
+                                        <td width="">{{ $data->daftar_pesanan }}</td>
+                                        {{-- <td><img src="{{ asset('assets/img/'.$data->foto)}}" width="100"></td> --}}
+                                          <td><a href="{{ route('gallery.edit',$data->id) }}"class="btn btn-sm btn-success">Edit Data</a></td>
+                                         <td><form action="{{ route('gallery.destroy',$data->id) }}" method="post">
+                            {{csrf_field()}}
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button class="btn btn-sm btn-danger" type="submit">Delete
+                                <i class="fas fa-fw fa-trash-alt"></i>
+                                </button>
+                            </form>
+                        </td>
+                                    </tr>
+                                    @endforeach
+                                </table>
+                            </div>
       </div>
     </div>
   </div>
@@ -339,6 +355,7 @@ class="btn btn-sm btn-primary">Show Data</a>
 <form action="{{ route('artikel.destroy',$data->id) }}" method="post">
 {{csrf_field()}}
 <input type="hidden" name="_method" value="DELETE">
+
 <button class="btn btn-sm btn-danger" type="submit">
     Hapus Data
 </button>

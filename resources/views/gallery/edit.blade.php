@@ -102,7 +102,7 @@
 		</ul>
 	</div><!--/.sidebar-->
 
-	<div class="col-sm-9 col-sm-offset-2 col-lg-10 col-lg-offset-2 main">
+	<div class="col-sm-12 col-sm-offset-2 col-lg-10 col-lg-offset-2 main">
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="#">

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Gallery;
 use App\Menu;
+use App\LaporanPemesanan;
 use Illuminate\Support\Facades\File;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Session;
@@ -17,8 +18,10 @@ class GalleryController extends Controller
         $user= User::count();
         $gallery = Gallery::count();
         $menus = Menu::count();
+        $laporan = LaporanPemesanan::count();
 
-        return view('gallery.index',compact('menus','user','gallery','foto'));
+
+        return view('gallery.index',compact('laporan','menus','user','gallery','foto'));
 
     }
 

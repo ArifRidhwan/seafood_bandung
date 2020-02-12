@@ -175,6 +175,16 @@
 							<div class="text-muted">New Posted Photo</div>
 						</div>
 					</div>
+                </div>
+            <div>
+			<div class="row">
+				<div class="col-xs-2 col-md-3 col-lg-3 no-padding">
+					<div class="panel panel-teal panel-widget border-right">
+						<div class ="row no-padding"><i class="fa fa-picture-o fa-3x" aria-hidden="true"></i>
+							<div class="large">{{$laporan}}</div>
+							<div class="text-muted">Laporan Pemesanan</div>
+						</div>
+					</div>
 				</div>
                     {{-- <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
                         <div class="panel panel-orange panel-widget ">
@@ -192,7 +202,7 @@
 				<div class="col-xs-2 col-md-11 col-lg-3">
                                 <table class="table table-bordered">
                                 <thead class="thead-dark" >
-                                    <tr class="table-active">
+                                    <tr style="background-color:lavender;" class="table-active">
                                         <th scope="col">No</th>
 										<th scope="col">Menu</th>
 										<th scope="col">Harga</th>

@@ -15,6 +15,11 @@ class CreateAddFieldLaporanPemesanans extends Migration
     {
         Schema::create('laporan_pemesanans', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('nomor_id_ktp');
+            $table->string('nama_lengkap');
+            $table->string('alamat');
+            $table->string('antar_ambil_pesanan');
+            $table->string('daftar_pesanan');
             $table->timestamps();
         });
     }

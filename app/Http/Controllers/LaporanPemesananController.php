@@ -20,12 +20,20 @@ class LaporanPemesananController extends Controller
      */
     public function index()
     {
-        $laporanpemesanan= LaporanPemesanan::all();
         $foto= Gallery::all();
         $user= User::count();
         $gallery = Gallery::count();
         $menus = Menu::count();
-        return view('laporanpemesanan.index',compact('menus','user','gallery','foto'));
+        $laporan = LaporanPemesanan::count();
+
+         $laporanpemesanan= LaporanPemesanan::all();
+        // $laporanpemesanan->$nomor_id_ktp = $request->nomor_id_ktp;
+        // $laporanpemesanan->$nama_lengkap = $request->nama_lengkap;
+        // $laporanpemesanan->$alamat = $request->alamat;
+        // $laporanpemesanan->$antar_ambil_pesanan = $request->antar_ambi_pesanan;
+        // $laporanpemesanan->$daftar_pesanan = $request->daftar_pesanan;
+
+        return view('laporanpemesanan.index',compact('laporan','laporanpemesanan','menus','user','gallery','foto'));
     }
 
     /**

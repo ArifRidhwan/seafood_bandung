@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Gallery;
 use App\Menu;
+use App\LaporanPemesanan;
 use Illuminate\Support\Facades\File;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Session;
@@ -24,8 +25,10 @@ class MenuController extends Controller
         $user = User::count();
         $gallery = Gallery::count();
         $menus = Menu::count();
+        $laporan = LaporanPemesanan::count();
 
-        return view('menu.index',compact('user','gallery','menu','menus'));
+
+        return view('menu.index',compact('user','gallery','menu','menus','laporan'));
     }
 
     /**
