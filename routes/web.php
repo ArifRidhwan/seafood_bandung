@@ -10,6 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('delete', function () {
+    return view('deletemodal');
+});
+
 
 Route::get('/', function () {
     return redirect('Seafood');
@@ -25,6 +29,9 @@ Route::get('/contact', function () {
 });
 Route::get('/Seafood', function () {
     return view('frontend.index');
+});
+Route::get('/order', function () {
+    return view('frontend.order');
 });
 
 Auth::routes();

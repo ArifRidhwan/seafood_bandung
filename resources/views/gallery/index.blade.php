@@ -9,7 +9,6 @@
 	<link href="/lumino/css/font-awesome.min.css" rel="stylesheet">
 	<link href="/lumino/css/datepicker3.css" rel="stylesheet">
 	<link href="/lumino/css/styles.css" rel="stylesheet">
-
 	<!--Custom Font-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 	<!--[if lt IE 9]>
@@ -128,8 +127,7 @@
 				</ul>
 			</li> --}}
 			<li><a href="{{ route('logout') }}"onclick="event.preventDefault();
-              document.getElementById('logout-form').submit();"
-              class="btn btn-flat">
+              document.getElementById('logout-form').submit();"class="btn btn-flat">
               <em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="">
               @csrf
@@ -137,7 +135,7 @@
 		</ul>
 	</div><!--/.sidebar-->
 
-	<div class="col-sm-12 col-sm-offset-2 col-lg-10 col-lg-offset-2 main">
+	<div class="col-sm-9,9 col-sm-offset-2 col-lg-10 col-lg-offset-2 main">
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href=""><em class="fa fa-home"></em></a></li>
@@ -159,6 +157,7 @@
             </div>
 
 <br>
+<div>
         <div>
 			<div class="row">
 				<div class="col-xs-2 col-md-3 col-lg-3 no-padding">
@@ -186,27 +185,19 @@
 					<div class="panel panel-teal panel-widget border-right">
 						<div class ="row no-padding"><i class="fa fa-picture-o fa-3x" aria-hidden="true"></i>
 							<div class="large">{{$laporan}}</div>
-							<div class="text-muted">Laporan Pemesanan</div>
+							<div class="text-muted">Laporan Pembelian</div>
 						</div>
-					</div>
-				</div>
-				{{-- <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-					<div class="panel panel-orange panel-widget ">
-						<div class="row no-padding"><i class="fa fa-user-circle fa-3x"  aria-hidden="true"></i>
-							<div class="large">{{$user}}</div>
-							<div class="text-muted">New Users</div>
-						</div>
-					</div>
-				</div>
-			</div><!--/.row--> --}}
+				    </div>
+			    </div>
+            </div>
         </div>
-
+    </div>
      <div class="table-responsive">
-				<div class="col-xs-2 col-md-11 col-lg-3">
+				<div class="col-xs-9 col-md-12 col-lg-8">
                                 <table class="table table-bordered">
                                 <thead class="thead-dark" >
                                     <tr style="background-color:lavender;" class="table-active">
-                                        <th scope="col">No</th>
+                                        <th  scope="col">No</th>
 										<th scope="col">Nama Foto</th>
 										<th scope="col">Desc Foto</th>
                                         <th scope="col">Foto</th>
@@ -224,7 +215,7 @@
                                          <td><form action="{{ route('gallery.destroy',$data->id) }}" method="post">
                             {{csrf_field()}}
                                 <input type="hidden" name="_method" value="DELETE">
-                                <button class="btn btn-sm btn-danger" type="submit">Delete
+                                <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#myModalDelete">Delete
                                 <i class="fas fa-fw fa-trash-alt"></i>
                                 </button>
                             </form></td>
@@ -232,7 +223,6 @@
                                     @endforeach
                                 </table>
                             </div>
-	<!-- Tombol untuk menampilkan modal-->
 
 	<!-- Modal -->
 	<div id="myModal" class="modal fade" role="dialog">

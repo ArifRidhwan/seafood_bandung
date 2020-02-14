@@ -127,7 +127,7 @@
 				</ul>
 			</li>
 			<li><a href="{{ route('logout') }}"onclick="event.preventDefault();
-              document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">
+              document.getElementById('logout-form').submit();" class="btn btn-flat">
               <em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
               @csrf
@@ -135,7 +135,7 @@
 		</ul>
 	</div><!--/.sidebar-->
 
-	<div class="col-sm-9 col-sm-offset-2 col-lg-10 col-lg-offset-2 main">
+	<div class="col-sm-9,9 col-sm-offset-2 col-lg-10 col-lg-offset-2 main">
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href=""><em class="fa fa-home"></em></a></li>
@@ -182,7 +182,7 @@
 					<div class="panel panel-teal panel-widget border-right">
 						<div class ="row no-padding"><i class="fa fa-picture-o fa-3x" aria-hidden="true"></i>
 							<div class="large">{{$laporan}}</div>
-							<div class="text-muted">Laporan Pemesanan</div>
+							<div class="text-muted">Laporan Pembelian</div>
 						</div>
 					</div>
 				</div>

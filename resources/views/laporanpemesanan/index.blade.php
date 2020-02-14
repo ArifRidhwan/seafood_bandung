@@ -127,25 +127,24 @@
 				</ul>
 			</li>
 			<li><a href="{{ route('logout') }}"onclick="event.preventDefault();
-              document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">
+              document.getElementById('logout-form').submit();" class="btn btn-flat">
               <em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
-              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="">
               @csrf
                </form>
 		</ul>
 	</div><!--/.sidebar-->
-
-	<div class="col-sm-9 col-sm-offset-2 col-lg-10 col-lg-offset-2 main">
+	<div class="col-sm-9,9 col-sm-offset-2 col-lg-10 col-lg-offset-2 main">
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href=""><em class="fa fa-home"></em></a></li>
-				<li class="">Gallery</li>
+				<li class="">Laporan Pembelian</li>
 			</ol>
 		</div><!--/.row-->
 
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Laporan Pemesanan</h1>
+				<h1 class="page-header">Laporan Pembelian</h1>
 			</div>
         </div><!--/.row-->
         	<div>
@@ -156,7 +155,7 @@
                 @include('layouts.flash')
             </div>
 
-<br>
+    <br>
         <div>
 			<div class="row">
 				<div class="col-xs-2 col-md-3 col-lg-3 no-padding">
@@ -185,90 +184,16 @@
 					<div class="panel panel-teal panel-widget border-right">
 						<div class ="row no-padding"><i class="fa fa-picture-o fa-3x" aria-hidden="true"></i>
 							<div class="large">{{$laporan}}</div>
-							<div class="text-muted">Laporan Pemesanan</div>
+							<div class="text-muted">Laporan Pembelian</div>
 						</div>
 					</div>
 				</div>
-				{{-- <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-					<div class="panel panel-orange panel-widget ">
-						<div class="row no-padding"><i class="fa fa-user-circle fa-3x"  aria-hidden="true"></i>
-							<div class="large">{{$user}}</div>
-							<div class="text-muted">New Users</div>
-						</div>
-					</div>
-				</div>
-			</div><!--/.row-->
-        </div>--}}
-
-	<!-- Tombol untuk menampilkan modal-->
-	<!-- Modal -->
-	{{-- <div id="myModal" class="modal fade" role="dialog">
-		<div class="modal-dialog">
-			<!-- konten modal-->
-			<div class="modal-content">
-				<!-- heading modal -->
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Tambah Data Photo</h4>
-                </div>
-                <form action="{{ route('gallery.store') }}" method="post" enctype="multipart/form-data">
-                    @csrf
-                <!-- body modal -->
-                <div class="form-group row mb-4">
-                    <label class="col-form-label text-md-right col-12 col-md-2 col-lg-2">Title</label>
-                <div class="col-sm-3 col-md-5">
-                    <input name="nama_foto" type="text" class="form-control{{ $errors->has('nama_foto') ? ' is-invalid' : '' }}" required>
-
-                @if ($errors->has('nama_foto'))
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $errors->first('nama_foto') }}</strong>
-                    </span>
-                    @endif
-                </div>
             </div>
-
-            <div class="form-group row mb-4">
-                <label class="col-form-label text-md-right col-12 col-md-2 col-lg-2">Desc Photo</label>
-                <div class="col-sm-7 col-md-7">
-                    <textarea name="desc_foto" cols="5" rows="5" type="description" class="form-control{{ $errors->has('desc_foto') ? ' is-invalid' : '' }}" required></textarea>
-
-                @if ($errors->has('desc_foto'))
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $errors->first('desc_foto') }}</strong>
-                    </span>
-                @endif
-                </div>
-            </div>
-
-
-				<div class="form-group row mb-4">
-                    <div class="col-sm-12 col-md-10">
-              <div id="image-preview" class="image-preview">
-                <input type="file" name="foto" id="image-upload" />
-
-            @if ($errors->has('photo'))
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $errors->first('foto') }}</strong>
-                </span>
-            @endif
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="form-group row mb-4">
-            <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
-            <div class="col-sm-12 col-md-7">
-                <button type="submit" class="btn btn-primary">Buat Post</button>
-              {{-- <a href="{{ route('artikel.index') }}" class="btn btn-secondary">Kembali</a> --}}
-            </div>
-          </div>
-        </form>
+        </div>
     </div>
     <div class="table-responsive">
 				<div class="col-xs-9 col-md-12 col-lg-8" >
-                                <table class="table table-bordered">
+                                <table style="overflow-x:auto" class="table table-bordered">
                                 <thead class="thead-dark" >
                                     <tr style="background-color:lavender;" class="table-active">
                                         <th scope="col">No</th>
