@@ -184,30 +184,32 @@
 				<div class="col-md-10 col-lg-6 p-r-35 p-r-15-lg m-l-r-auto">
 					<div class="wrap-item-mainmenu p-b-22">
 						<h3 class="tit-mainmenu tit10 p-b-25">
-							STARTERS
+							Menu
 						</h3>
 
-						<!-- Item mainmenu -->
+                        <!-- Item mainmenu -->
+                        @foreach ($menu as $item)
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
-									Pine nut sbrisalona
+                            <a  class="btn-show name-item-mainmenu txt21" href="{{asset('/assets/menu_img/'.$item->foto)}}" value="" data-lightbox="gallery">
+									{{$item->menu}}
 								</a>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
 								<div class="price-item-mainmenu txt22">
-									$29.79
+									{{$item->harga}}
 								</div>
 							</div>
 
 							<span class="info-item-mainmenu txt23">
 								Sed fermentum eros vitae eros
-							</span>
+                             </span>
+                             @endforeach
 						</div>
 
 						<!-- Item mainmenu -->
-						<div class="item-mainmenu m-b-36">
+						{{--<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
 								<a href="#" class="name-item-mainmenu txt21">
 									Aenean eu
@@ -549,13 +551,13 @@
 							</span>
 						</div>
 					</div>
-				</div>
+				</div>--}}
 			</div>
 		</div>
     </section>
 
 	<!-- Footer -->
-	<<footer class="bg1">
+	<footer class="bg1">
 		<div class="container p-t-40 p-b-70">
 			<div class="row">
 				<div class="col-sm-6 col-md-4 p-t-50">

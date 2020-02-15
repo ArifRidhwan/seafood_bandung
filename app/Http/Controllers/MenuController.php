@@ -106,10 +106,10 @@ class MenuController extends Controller
                     $upload = $file->move($path, $filename);
                     $menu->foto = $filename;
                 }
-                $foto->save();
+                $menu->save();
                 Session::flash("flash_notification", [
            "level" => "success",
-           "message" => "Foto <b>$foto->menu</b> berhasil Di Ubah!"
+           "message" => "Foto <b>$menu->menu</b> berhasil Di Ubah!"
                    ]);
 
                 // toastr()->success('Galley Foto berhasil Dibuat!');

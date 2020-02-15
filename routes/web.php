@@ -14,16 +14,14 @@ Route::get('delete', function () {
     return view('deletemodal');
 });
 
-
 Route::get('/', function () {
     return redirect('Seafood');
 });
 Route::get('/menu', function () {
     return view('frontend.menu');
 });
-Route::get('/galleryfoto', function () {
-    return view('frontend.gallery');
-});
+Route::get('/galleryfoto', 'FrontendController@gallery')->name('galleryfoto');
+Route::get('/menu', 'FrontendController@menu')->name('menu');
 Route::get('/contact', function () {
     return view('frontend.contact');
 });
