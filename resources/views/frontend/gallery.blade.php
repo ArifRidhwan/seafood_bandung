@@ -3,7 +3,8 @@
 <head>
 	<title>Gallery</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/fnt-aw/css/all.css" />
 <!--===============================================================================================-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 <!--===============================================================================================-->
@@ -66,7 +67,9 @@
 
 								<li>
 									<a href="contact">Contact</a>
-								</li>
+                                </li>
+
+
 							</ul>
 						</nav>
 					</div>
@@ -105,6 +108,10 @@
 
 			<li class="t-center m-b-33">
 				<a href="contact" class="txt19">Contact</a>
+            </li>
+
+            <li class="t-center m-b-13">
+			    <a href="order"> <i class="fas fa-shopping-cart"></i> </a>
 			</li>
 
 		</ul>
@@ -155,7 +162,7 @@
             <img width="100%" height="50%" src="{{asset('/assets/img/'.$item->foto)}}" alt="IMG-GALLERY ">
 
                 <div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-search" href="{{asset('/assets/img/'.$item->foto)}}" data-lightbox="gallery"></a>
+					<a class="btn-show-gallery flex-c-m fa fa-search" href="{{asset('/assets/img/'.$item->foto)}}" ></a>
 				</div>
 
             </div>
@@ -342,6 +349,6 @@
 	<script type="text/javascript" src="frontend/assets/vendor/isotope/isotope.pkgd.min.js"></script>
 <!--===============================================================================================-->
 	<script src="frontend/assets/js/main.js"></script>
-
+    <script type="text/javascript" src="font-aw/js/all.js"></script>
 </body>
 </html>

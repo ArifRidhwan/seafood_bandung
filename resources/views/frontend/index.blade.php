@@ -4,6 +4,7 @@
 	<title>Home</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/fnt-aw/css/all.css" />
 <!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="frontend/assets/images/icons/favicon.png"/>
 <!--===============================================================================================-->
@@ -64,7 +65,9 @@
 
 								<li>
 									<a href="contact">Contact</a>
-								</li>
+                                </li>
+
+
 							</ul>
 						</nav>
 					</div>
@@ -97,9 +100,18 @@
 
 			<li class="t-center m-b-33">
 				<a href="contact" class="txt19">Contact</a>
+            </li>
+
+            <li class="t-center m-b-13">
+				<a href="order"> <i class="fas fa-shopping-cart"></i> </a>
 			</li>
 
-            <li class="t-center m-b-33">
+			<script type="text/javascript" src="font-aw/js/all.js"></script>
+			<link rel="stylesheet" href="/fnt-aw/css/all.css" />
+
+
+
+            {{-- <li class="t-center m-b-33">
                 <a href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">
@@ -108,8 +120,8 @@
                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
-                {{-- <a href="contact" class="txt19">Logout</a> --}}
-			</li>
+                {{-- <a href="contact" class="txt19">Logout</a> 
+			</li> --}}
 		</ul>
 
 		<!-- - -->
@@ -1266,5 +1278,7 @@
 	<script type="text/javascript" src="frontend/assets/vendor/lightbox2/js/lightbox.min.js"></script>
 <!--===============================================================================================-->
 	<script src="frontend/assets/js/main.js"></script>
+	<script type="text/javascript" src="font-aw/js/all.js"></script>
+	<link rel="stylesheet" href="/fnt-aw/css/all.css" />
 </body>
 </html>

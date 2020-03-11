@@ -3,7 +3,8 @@
 <head>
 	<title>Order</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/fnt-aw/css/all.css" />
 <!--===============================================================================================-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 <!--===============================================================================================-->
@@ -66,7 +67,9 @@
 
 								<li>
 									<a href="contact">Contact</a>
-								</li>
+                                </li>
+
+
 							</ul>
 						</nav>
 					</div>
@@ -105,6 +108,10 @@
 
 			<li class="t-center m-b-33">
 				<a href="contact" class="txt19">Contact</a>
+            </li>
+
+            <li class="t-center m-b-13">
+				<a href="order"> <i class="fas fa-shopping-cart"></i> </a>
 			</li>
 		</ul>
 
@@ -263,12 +270,12 @@
                             <div class="col-md-4">
 								<!-- Email -->
 								<span class="txt9">
-									Pilih Pesanan
+									Menu Makanan
                                 </span>
                                 <div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
                                 <select class="selection-1" name="keterangan" placeholder="Choice">
-										<option>Kerang Hijau</option>
-                                        <option>Ambil Pesanan</option>
+                                <option></option>
+
                                 </select>
 
                                 {{-- <div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
@@ -425,7 +432,9 @@
 	<script src="frontend/assets/https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
 	<script src="frontend/assets/js/map-custom.js"></script>
 <!--===============================================================================================-->
-	<script src="frontend/assets/js/main.js"></script>
+    <script src="frontend/assets/js/main.js"></script>
+    <script type="text/javascript" src="font-aw/js/all.js"></script>
+
 
 </body>
 </html>
