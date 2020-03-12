@@ -25,7 +25,7 @@ Route::get('/menu', 'FrontendController@menu')->name('menu');
 Route::get('/contact', function () {
     return view('frontend.contact');
 });
-Route::get('/Seafood', function () {
+Route::get('/SeafoodBandung', function () {
     return view('frontend.index');
 });
 Route::get('/order', function () {

@@ -54,7 +54,7 @@
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="Seafood">Home</a>
+									<a href="SeafoodBandung">Home</a>
 								</li>
 
 								<li>
@@ -95,7 +95,7 @@
 		<!-- - -->
 		<ul class="menu-sidebar p-t-95 p-b-70">
 			<li class="t-center m-b-13">
-				<a href="Seafood" class="txt19">Home</a>
+				<a href="SeafoodBandung" class="txt19">Home</a>
 			</li>
 
 			<li class="t-center m-b-13">
@@ -266,15 +266,19 @@
 
                         </div>
 
+
                         <div class="row">
                             <div class="col-md-4">
 								<!-- Email -->
 								<span class="txt9">
 									Menu Makanan
                                 </span>
+                                 {{-- @foreach ($menu as $item) --}}
                                 <div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
                                 <select class="selection-1" name="keterangan" placeholder="Choice">
                                 <option></option>
+                                {{-- @endforeach --}}
+
 
                                 </select>
 

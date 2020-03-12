@@ -3,34 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Gallery;
-use App\Menu;
 use App\Order;
 
-class FrontendController extends Controller
+class OrderController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function gallery()
+    public function index()
     {
-        $gallery = Gallery::all();
+        $order = Order::All();
 
-        return view('frontend.gallery', compact('gallery'));
-    }
-      public function menu()
-    {
-        $menu = Menu::all();
-
-        return view('frontend.menu', compact('menu'));
-    }
-      public function order()
-    {
-        $order = Order::all();
-
-        return view('frontend.order', compact('order'));
+        return view('menu.index');
     }
 
     /**
@@ -51,7 +37,25 @@ class FrontendController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // $order = new Order;
+        //         $menu->menu = $request->menu;
+        //         $menu->harga = $request->harga;
+        //         # Foto
+        //         if ($request->hasFile('foto')) {
+        //             $file = $request->file('foto');
+        //             $path = public_path() . '/assets/menu_img/';
+        //             $filename ='_' . $file->getClientOriginalName();
+        //             $upload = $file->move($path, $filename);
+        //             $menu->foto = $filename;
+        //         }
+        //         $menu->save();
+        //         // toastr()->success('Galley Foto berhasil Dibuat!');
+
+        //         Session::flash("flash_notification", [
+        //             "level" => "success",
+        //             "message" => "Menu Foto <b>$menu->menu</b> berhasil Ditambahkan!"
+        //             ]);
+        //             return redirect()->route('menu.index');
     }
 
     /**

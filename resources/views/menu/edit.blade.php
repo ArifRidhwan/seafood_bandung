@@ -31,7 +31,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span></button>
-				<a class="navbar-brand" href="Seafood"><span>Seafood</span>Bandung</a>
+				<a class="navbar-brand" href="SeafoodBandung"><span>Seafood</span>Bandung</a>
 <div class="panel-header panel-header-lg-2  ">
     <ul class="dropdown-menu dropdown-alerts">
 							<li><a href="#">
@@ -75,7 +75,7 @@
 			<li class="active"><a href={{route('gallery.index')}}><em class="">&nbsp;</em> Gallery</a></li>
             <li><a href="{{route('menu.index')}}"><em class="">&nbsp;</em>Menu</a></li>
             <li><a href="{{route('laporan.index')}}"><em class="">&nbsp;</em>Laporan Pembelian</a></li>
-            <li><a href="/Seafood"><em class="">&nbsp;</em>Web</a></li>
+            <li><a href="/SeafoodBandung"><em class="">&nbsp;</em>Web</a></li>
 			{{-- <li><a href="elements.html"><em class="fa fa-toggle-off">&nbsp;</em> UI Elements</a></li>
 			<li><a href="panels.html"><em class="fa fa-clone">&nbsp;</em> Alerts &amp; Panels</a></li>
 			<li class="parent "><a data-toggle="collapse" href="#sub-item-1">

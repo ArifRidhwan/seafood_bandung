@@ -31,7 +31,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span></button>
-				<a class="navbar-brand" href="Seafood"><span>Seafood</span>Bandung</a>
+				<a class="navbar-brand" href="SeafoodBandung"><span>Seafood</span>Bandung</a>
 <div class="panel-header panel-header-lg-2  ">
     <ul class="dropdown-menu dropdown-alerts">
 							<li><a href="#">

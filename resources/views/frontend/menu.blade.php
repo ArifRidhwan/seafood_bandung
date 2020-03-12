@@ -54,7 +54,7 @@
                         <nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="Seafood">Home</a>
+									<a href="SeafoodBandung">Home</a>
 								</li>
 
 								<li>
@@ -94,7 +94,7 @@
 		<!-- - -->
 		<ul class="menu-sidebar p-t-95 p-b-70">
 			<li class="t-center m-b-13">
-				<a href="Seafood" class="txt19">Home</a>
+				<a href="SeafoodBandung" class="txt19">Home</a>
 			</li>
 
 			<li class="t-center m-b-13">

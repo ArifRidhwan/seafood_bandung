@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Home</title>
+	<title>SeafoodBandung</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/fnt-aw/css/all.css" />
@@ -120,7 +120,7 @@
                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
-                {{-- <a href="contact" class="txt19">Logout</a> 
+                {{-- <a href="contact" class="txt19">Logout</a>
 			</li> --}}
 		</ul>
 
@@ -207,7 +207,7 @@
 
 						<div class="wrap-btn-slide1 animated visible-false" data-appear="slideInUp">
 							<!-- Button1 -->
-							<a href="frontend/assets/menu.html" class="btn1 flex-c-m size1 txt3 trans-0-4">
+							<a href="menu" class="btn1 flex-c-m size1 txt3 trans-0-4">
 								Look Menu
 							</a>
 						</div>
@@ -1157,7 +1157,7 @@
 
 
 	<!-- Footer -->
-		<<footer class="bg1">
+		<footer class="bg1">
 		<div class="container p-t-40 p-b-70">
 			<div class="row">
 				<div class="col-sm-6 col-md-4 p-t-50">
